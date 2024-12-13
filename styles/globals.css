@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  font-family: "Nunito", sans-serif;
+}
+.playfair-font{
+    font-family: "Playfair Display", serif;
+}
+.career-card{
+  background: linear-gradient(0.56deg, rgba(254, 92, 0, 0) 5.15%, #A13DFF 81.43%);
+
+
+}
