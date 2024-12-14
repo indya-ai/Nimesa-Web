@@ -1,4 +1,4 @@
-import Banner from "../../components/components/common/Banner";
+import Banner from "@/components/common/Banner";
 
 function index() {
   return (

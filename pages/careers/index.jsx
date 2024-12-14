@@ -1,6 +1,6 @@
 import { useState } from "react";
-import CareerCard from "../../components/components/career/CareerCard";
-import Banner from "../../components/components/common/Banner";
+import CareerCard from "@/components/career/CareerCard";
+import Banner from "@/components/common/Banner";
 
 export default function Index() {
   const [assignedTo, setAssignedTo] = useState("tomCook");
