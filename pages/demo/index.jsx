@@ -3,7 +3,7 @@ import Banner from "@/components/common/Banner";
 function index() {
   return (
     <div>
-      <Banner title="Title" />
+      <Banner title="Demo" imageUrl="/assets/images/banner.svg" />
       <div className="grid md:grid-cols-2 lg:gap-0 gap-3 xl:my-16 my-10 container m-auto p-2 lg:items-center">
         <div className="xl:w-[60%] lg:w-[80%] mx-auto">
           <p>

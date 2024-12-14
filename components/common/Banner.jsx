@@ -1,15 +1,17 @@
-import React from "react";
-
-const Banner = ({ title }) => {
+const Banner = ({ title, imageUrl }) => {
   return (
-    <div className="relative bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white h-[250px] flex items-center justify-center">
-     
-      <div className="absolute inset-0 pointer-events-none">
-        <img src="/assets/images/banner.svg"/>
-      </div>
+    <div className="relative flex items-center justify-center py-40 text-white">
+      {/* Background Image */}
+      <img
+        src={imageUrl}
+        alt="Banner Background"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-      {/* Title */}
-      <h1 className="text-3xl font-bold z-10">{title}</h1>
+      {/* Overlay Text */}
+      <h1 className="text-3xl font-bold px-4 py-2 rounded z-10">
+        {title}
+      </h1>
     </div>
   );
 };

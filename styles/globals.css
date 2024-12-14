@@ -12,6 +12,7 @@ body {
 }
 .career-card{
   background: linear-gradient(0.56deg, rgba(254, 92, 0, 0) 5.15%, #A13DFF 81.43%);
-
-
+}
+.bg-blue{
+  background: #3432CA;
 }
