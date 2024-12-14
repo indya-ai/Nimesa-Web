@@ -30,7 +30,7 @@ export default function Index() {
   ];
   return (
     <div>
-      <Banner title="Career" imageUrl="/assets/images/banner.jpg" />
+      <Banner title="Career" imageUrl="/assets/images/banner.svg" />
       <div className="bg-white lg:py-20 md:py-12 py-5">
         <div className="container grid items-center md:grid-cols-2 md:gap-0 gap-4 px-2 m-auto">
           <img src="/assets/images/career/image.svg" />
