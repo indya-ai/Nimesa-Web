@@ -51,7 +51,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div className="container xl:text-base lg:text-xs mx-auto flex py-5 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container xl:text-base lg:text-xs mx-auto flex py-5 items-center justify-between px-2 lg:px-4">
         {/* Logo Section */}
         <Link href="/" className="text-xl font-bold text-gray-900">
           <img src="/assets/images/header/logo.svg" layout="full" />

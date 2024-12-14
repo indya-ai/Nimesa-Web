@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="bg-[#F9F9F9] px-2">
-        <div className="container py-16 mx-auto grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-6 gap-3">
+        <div className="container py-16 mx-auto grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-6 gap-3 px-2 lg:px-4">
           <div>
             <h2 className="text-lg font-semibold mb-4">
               <img src="/assets/images/header/logo.svg" />
