@@ -1,4 +1,4 @@
-import Banner from "@/pages/components/common/Banner";
+import Banner from "@/components/common/Banner";
 import React from "react";
 
 function index() {
