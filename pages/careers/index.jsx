@@ -60,7 +60,7 @@ export default function Index() {
       </div>
       <div className="bg-[#F8F8F9]">
         <div className="container lg:py-16 md:py-8 py-3 m-auto px-2">
-          <h2 className="md:text-[56px] text-4xl text-center playfair-font py-5">
+          <h2 className="md:text-[56px] text-4xl text-center playfair-font py-5 md:mb-8">
             Careers at Nimesa
           </h2>
           <div className="grid md:gap-8 gap-3 md:grid-cols-2 lg:grid-cols-3">

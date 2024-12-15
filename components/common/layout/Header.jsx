@@ -51,7 +51,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div className="container xl:text-base lg:text-xs mx-auto flex py-5 items-center justify-between px-2 lg:px-4">
+      <div className="container xl:text-base lg:text-xs mx-auto flex py-5 items-center justify-between px-2">
         {/* Logo Section */}
         <Link href="/" className="text-xl font-bold text-gray-900">
           <img src="/assets/images/header/logo.svg" layout="full" />
@@ -79,7 +79,7 @@ export function Header() {
         >
           <ul className="flex flex-col items-center space-y-4 p-4 lg:flex-row lg:space-y-0 lg:space-x-6 lg:p-0">
             {/* Menu Item 1 */}
-            <li className="relative group">
+            <li className="relative group" onClick={toggleMenu}>
               <Link href="/use-case">Home</Link>
             </li>
             <li className="relative group">
@@ -99,10 +99,10 @@ export function Header() {
                   ref={subMenuRef}
                   className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
                 >
-                  <li className="relative group">
+                  <li className="relative">
                     <li className="m-2">
                       <Link
-                        href="/financial-services"
+                        href="/services/aws-services"
                         className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
                       >
                         By AWS Service
@@ -207,7 +207,7 @@ export function Header() {
               )}
             </li>
             <li className="relative group">
-              <Link href="/careers">
+              <Link href="/careers" onClick={toggleMenu}>
                 <button
                   className="flex items-center justify-between w-full md:w-auto "
                   onClick={() => toggleSubMenu(4)}
@@ -234,7 +234,7 @@ export function Header() {
               </button>
             </li>
             <li>
-              <Link href="/demo">
+              <Link href="/demo" onClick={toggleMenu}>
                 <button className="bg-blue rounded-full px-4 py-2 text-white">
                   Request a Demo
                 </button>
