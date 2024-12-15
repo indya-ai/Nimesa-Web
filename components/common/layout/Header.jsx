@@ -100,7 +100,7 @@ export function Header() {
                   className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
                 >
                   <li className="relative">
-                    <li className="m-2">
+                    <li className="m-2" onClick={() => toggleSubMenu(0)}>
                       <Link
                         href="/services/aws-services"
                         className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"

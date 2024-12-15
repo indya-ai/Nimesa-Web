@@ -16,3 +16,6 @@ body {
 .bg-blue{
   background: #3432CA;
 }
+.aws-card{
+ background:linear-gradient(180deg, #009900 0%, rgba(52, 50, 202, 0) 100%);
+}
