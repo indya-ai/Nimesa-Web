@@ -4,7 +4,7 @@ import React from "react";
 function index() {
   return (
     <div>
-      <Banner title="Title" />
+      <Banner title="AWS Services" imageUrl="/assets/images/banner.svg" />
     </div>
   );
 }
