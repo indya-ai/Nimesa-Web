@@ -4,15 +4,10 @@ const AwsCard = ({ title, imageSrc, departmentList }) => {
     <div className="aws-card p-[1px] px-[0.9px] rounded-[24px]">
       <div className="flex bg-white h-full flex-col gap-14 rounded-[24px] p-[38px] justify-between">
         <div className="flex flex-col gap-3">
-          {/* Image */}
           <div className="p-2">
             <img src={imageSrc} alt={title} />
           </div>
-
-          {/* Title */}
           <h3 className="text-[32px] font-bold playfair-font">{title}</h3>
-
-          {/* List of Departments */}
           <ul className="list-disc pl-5 space-y-1">
             {Array.isArray(departmentList) && departmentList.length > 0 ? (
               departmentList.map((item, index) => (

@@ -1,5 +1,6 @@
 import Banner from "@/components/common/Banner";
 import AwsCard from "@/components/solution/AwsCard";
+import AwsMarketplace from "@/components/solution/AwsMarketplace";
 import OurValueCard from "@/components/solution/OurValueCard";
 
 function index() {
@@ -70,10 +71,10 @@ function index() {
   return (
     <div>
       <Banner title="AWS Services" imageUrl="/assets/images/banner.svg" />
-      <div className="bg-whiteo lg:py-20 md:py-12 py-5">
+      <div className="bg-white lg:py-20 md:py-12 py-5">
         <div className="container lg:mb-16 lg:items-center items-center grid md:grid-cols-2 md:gap-0 gap-4 px-2 m-auto">
           <img className="mx-auto" src="/assets/images/solution/solution.svg" />
-          <div className="mx-4">
+          <div className="md:mx-4">
             <h2 className="text-[56px] playfair-font">Solution</h2>
             <p className="text-lg my-5">
               NIMESA is a data protection and copy data management solution
@@ -124,27 +125,7 @@ function index() {
               ))}
           </div>
         </div>
-        <div className="container px-2 py-12 m-auto overflow-hidden">
-          <div className="xl:p-20 lg:p-16 p-8 grid md:grid-cols-2 rounded-3xl bg-[url('/assets/images/solution/aws-mp-bg.svg')] bg-cover bg-center bg-no-repeat">
-            <div className="text-white xl:w-[80%] mx-auto">
-              <h2 className="lg:text-[44px] md:text-[40px] text-[30px] playfair-font">
-                Deploy <span className="text-[#009900]">Nimesa</span> in 2 mins
-                from AWS market place
-              </h2>
-              <p className="my-4">
-                DR process is complex, expensive, and unpredictable, Nimesa
-                makes it simple, affordable, and highly secure
-              </p>
-              <button className="bg-white rounded-full md:mt-0 mt-4 p-3 px-6 text-[#212121]">
-                Learn More
-              </button>
-            </div>
-            <img
-              className="mx-auto md:mt-0 mt-6"
-              src="/assets/images/solution/aws-marketplace.svg"
-            />
-          </div>
-        </div>
+      <AwsMarketplace/>
       </div>
     </div>
   );

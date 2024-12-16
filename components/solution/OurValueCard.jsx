@@ -9,7 +9,7 @@ const OurValueCard = ({ title, imageSrc, detail }) => {
           <h3 className="text-[32px] font-bold text-[#212121] playfair-font">
             {title}
           </h3>
-          <p className="text-[#4D4D4D] text-lg">{detail}</p>
+          <p className="text-gray text-lg">{detail}</p>
         </div>
       </div>
     </div>

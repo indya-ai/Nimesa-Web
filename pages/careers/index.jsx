@@ -68,13 +68,13 @@ export default function Index() {
               <img
                 src="/assets/images/career/search-icon.svg"
                 alt="search icon"
-                className="absolute left-3 top-1/2 -mt-2.5 text-[#4D4D4D] pointer-events-none group-focus-within:text-blue-500 dark:text-slate-500"
+                className="absolute left-3 top-1/2 -mt-2.5 text-gray pointer-events-none group-focus-within:text-blue-500 dark:text-slate-500"
               />
               <input
                 type="text"
                 aria-label="Search"
                 placeholder="Search..."
-                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-[#4D4D4D] py-3 pl-10 shadow-sm"
+                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-gray py-3 pl-10 shadow-sm"
               />
             </div>
 

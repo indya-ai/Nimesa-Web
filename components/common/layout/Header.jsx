@@ -100,9 +100,15 @@ export function Header() {
                   className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
                 >
                   <li className="relative">
-                    <li className="m-2" onClick={() => toggleSubMenu(0)}>
+                    <li
+                      className="m-2"
+                      onClick={() => {
+                        toggleSubMenu(0);
+                        toggleMenu();
+                      }}
+                    >
                       <Link
-                        href="/services/aws-services"
+                        href="/solution/aws-services"
                         className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
                       >
                         By AWS Service
@@ -127,20 +133,32 @@ export function Header() {
                         ref={subSubMenuRef}
                         className="lg:absolute md:left-full lg:ml-0 ml-4 py-2 z-50 top-0 lg:mt-10 w-max bg-white rounded-xl shadow-md"
                       >
-                        <li className="m-2">
+                        <li
+                          className="m-2"
+                          onClick={() => {
+                            toggleSubMenu(0);
+                            toggleMenu();
+                          }}
+                        >
                           <Link
-                            href="/healthcare"
+                            href="/solution/healthcare"
                             className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
                           >
                             Healthcare
                           </Link>
                         </li>
-                        <li className="m-2">
+                        <li
+                          className="m-2"
+                          onClick={() => {
+                            toggleSubMenu(0);
+                            toggleMenu();
+                          }}
+                        >
                           <Link
-                            href="/healthcare"
+                            href="/solution/financial-service"
                             className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
                           >
-                            Healthcare
+                            Financial Services
                           </Link>
                         </li>
                       </ul>

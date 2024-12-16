@@ -31,7 +31,7 @@ function index() {
                 type="text"
                 aria-label="Full Name"
                 placeholder="Full Name"
-                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-[#4D4D4D] p-3 shadow-sm"
+                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-gray p-3 shadow-sm"
               />
             </div>
             <div>
@@ -39,7 +39,7 @@ function index() {
                 type="email"
                 aria-label="Business email i’d"
                 placeholder="Business email i’d"
-                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-[#4D4D4D] p-3 shadow-sm"
+                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-gray p-3 shadow-sm"
               />
             </div>
             <div>
@@ -47,7 +47,7 @@ function index() {
                 type="text"
                 aria-label="Company Name"
                 placeholder="Company Name"
-                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-[#4D4D4D] p-3 shadow-sm"
+                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-gray p-3 shadow-sm"
               />
             </div>
             <div>
@@ -55,7 +55,7 @@ function index() {
                 type="tel"
                 aria-label="Phone Number"
                 placeholder="Enter your phone number"
-                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-[#4D4D4D] p-3 shadow-sm"
+                className="appearance-none w-full border border-[#D3D3D3] focus:outline-none text-sm leading-6 bg-transparent rounded-full placeholder:text-gray p-3 shadow-sm"
               />
             </div>
             <p className="text-lg">About Your Environment</p>
