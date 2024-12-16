@@ -16,8 +16,8 @@ function index() {
               Disaster and data recovery for financial
             </h2>
             <p className="text-lg my-5">
-              Building Resilience for Regulated Organizations in AWS
-              Environments
+              Nimesa is the only disaster recovery solution that is engineered
+              for the unique requirements of AWS workloads.
             </p>
           </div>
         </div>
@@ -43,18 +43,16 @@ function index() {
                     recovery for financial and financial solution providers
                   </li>
                   <li>
-                    Support for organizational HIPAA, HITRUST, ISO-27001 and SOC
-                    2 compliance requirements
+                    Support for FINRA, PCI, DFS and SOC 2 compliance
+                    requirements
                   </li>
                   <li>
-                    An innovative security model ensuring patient data never
-                    leaves your environment. No business associate agreement
-                    (BAA) is required because Nimesa does not have access to
-                    your data
+                    An innovative security model ensuring user data never leaves
+                    your environment
                   </li>
                   <li>
                     Real-time recovery point objectives ensuring no data is lost
-                    during a recovery
+                    during a recovery, meaning you will never lose a transaction
                   </li>
                   <li>
                     Recovery times measured in minutes, so you can rapidly
