@@ -12,7 +12,7 @@ function index() {
             src="/assets/images/solution/healthcare/healthcare.svg"
           />
           <div className="md:mx-4">
-          <h2 className="lg:text-[56px] md:text-[36px] text-[30px] playfair-font">
+            <h2 className="lg:text-[56px] md:text-[36px] text-[30px] playfair-font">
               Disaster and data recovery for healthcare
             </h2>
             <p className="text-lg my-5">
@@ -32,10 +32,6 @@ function index() {
             </p>
 
             <div className="container mt-16 border border-[#3432CA] rounded-xl xl:p-8 p-4 lg:mb-16 items-center grid lg:grid-cols-2 md:gap-0 gap-4 m-auto">
-              <img
-                className="lg:mx-0 mx-auto lg:w-auto w-full"
-                src="/assets/images/solution/healthcare/recovery-healthcare.svg"
-              />
               <div className="md:mx-12 lg:mt-0 mt-5">
                 <h2 className="text-[24px] mb-3 playfair-font">
                   With <span className="font-light">Nimesa,</span> disaster and
@@ -66,6 +62,10 @@ function index() {
                   </li>
                 </ul>
               </div>
+              <img
+                className="lg:mr-0 mx-auto lg:w-auto w-full"
+                src="/assets/images/solution/healthcare/recovery-healthcare.svg"
+              />
             </div>
           </div>
           <img
