@@ -11,7 +11,7 @@ function index() {
             className="mx-auto"
             src="/assets/images/solution/financial/financial-service.svg"
           />
-          <div className="md:mx-4">
+          <div className="md:mx-4 ">
             <h2 className="xl:text-[56px] text-[30px] playfair-font">
               Disaster and data recovery for financial
             </h2>
@@ -31,7 +31,7 @@ function index() {
               for the unique requirements of applications running in AWS.
             </p>
 
-            <div className="container mt-16 border border-[#3432CA] rounded-xl xl:p-8 p-4 lg:mb-16 items-center grid lg:grid-cols-2 md:gap-0 gap-4 m-auto">
+            <div className="container mt-16 border border-[#3432CA] rounded-xl xl:p-8 md:p-4 p-6 lg:mb-16 items-center grid lg:grid-cols-2 md:gap-0 gap-4 m-auto">
               <div className="md:mx-12 lg:mt-0 mt-5">
                 <h2 className="text-[24px] mb-3 playfair-font">
                   With <span className="font-light">Nimesa,</span> disaster and
@@ -74,8 +74,8 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
             <img src="/assets/images/solution/financial/cloud-computing.svg" />
-            <div className="">
-              <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-8 text-[#212121]">
+            <div className="lg:px-[50px] md:px-[16px]">
+              <h2 className="xl:text-[56px] font-bold text-[30px] playfair-font py-5 md:mb-8 text-[#212121]">
                 What does it mean?
               </h2>
               <p className="text-lg text-gray">
@@ -90,7 +90,7 @@ function index() {
           </div>
         </div>
         <div className="bg-[#F8F8F9]">
-          <div className="container lg:py-16 md:py-8 py-3 m-auto px-2 text-center lg:w-[70%] md:w-[85%]">
+          <div className="container lg:py-16 md:py-8 py-3 m-auto px-2 text-center lg:w-[75%] md:w-[85%]">
             <h3 className="md:text-[32px] text-2xl text-center playfair-font py-5 md:mb-8">
               Today’s financial institutions must deliver a reliable, secure,
               first class customer experience across their digital properties.

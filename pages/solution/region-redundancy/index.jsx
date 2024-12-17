@@ -9,12 +9,12 @@ function index() {
         imageUrl="/assets/images/banner.svg"
       />
       <div className="bg-white lg:py-20 md:py-12 py-5">
-        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
+        <div className="container md:text-start text-center lg:mb-16 mb-6 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
             src="/assets/images/solution/multi-region/multi-region.svg"
           />
-          <div className="md:mx-24">
+          <div className="md:mx-20">
             <h2 className="xl:text-[56px] text-[30px] playfair-font text-[#212121]">
               Comprehensive multi-region redundancy for AWS
             </h2>
@@ -23,7 +23,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Complex cloud architectures introduce complex cloud disasters
                 </h2>
@@ -44,7 +44,7 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
             <img src="/assets/images/solution/ransomware/protected.svg" />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[54px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 High availability and geographic redundancy
               </h2>
@@ -67,7 +67,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Easy, cost-effective cross-region replication for all of your
                   AWS services
@@ -87,7 +87,7 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
             <img src="/assets/images/solution/multi-region/cloud.svg" />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Purpose built for the cloud
               </h2>
@@ -112,7 +112,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Balancing cost with time to recovery
                 </h2>
@@ -139,7 +139,7 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
             <img src="/assets/images/solution/multi-region/work-load.svg" />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Support for all workload types
               </h2>
@@ -157,7 +157,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Nimesa is the easiest way to achieve multi-region redundancy
                 </h2>

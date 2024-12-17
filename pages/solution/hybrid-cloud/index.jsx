@@ -20,7 +20,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Why is disaster recovery planning important?
                 </h2>
@@ -46,7 +46,7 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
             <img src="/assets/images/solution/hybrid/disaster.svg" />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[54px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 What kinds of IT disasters should i plan for?
               </h2>
@@ -70,7 +70,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Building disaster resilience
                 </h2>
@@ -97,7 +97,7 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
             <img src="/assets/images/solution/hybrid/amazon-hosted.svg" />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Nimesa solution makes DR for your amazon-hosted infrastructure
                 easy
@@ -115,7 +115,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   A single solution for hybrid clouds using AWS
                 </h2>

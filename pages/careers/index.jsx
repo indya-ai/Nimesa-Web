@@ -32,7 +32,7 @@ export default function Index() {
     <div>
       <Banner title="Career" imageUrl="/assets/images/banner.svg" />
       <div className="bg-white lg:py-20 md:py-12 py-5">
-        <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
+        <div className="container grid items-center md:grid-cols-2 md:gap-[4px] gap-[8px] px-2 m-auto">
           <img src="/assets/images/career/image.svg" />
           <div className="lg:w-[70%] md:w-[80%] mx-auto">
             <p className="text-lg">
@@ -64,7 +64,7 @@ export default function Index() {
             Careers at Nimesa
           </h2>
           <div className="grid md:gap-8 gap-3 md:grid-cols-2 lg:grid-cols-3">
-            <div className="group relative bg-white rounded-md">
+            <div className="group relative bg-white overflow-hidden rounded-full">
               <img
                 src="/assets/images/career/search-icon.svg"
                 alt="search icon"

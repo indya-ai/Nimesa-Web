@@ -8,14 +8,14 @@ function index() {
         title="Ransomware Protection"
         imageUrl="/assets/images/banner.svg"
       />
-      <div className="bg-white lg:py-20 md:py-12 py-5">
+      <div className="bg-white lg:py-20 md:py-12 py-8">
         <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
             src="/assets/images/solution/ransomware/ransomware.svg"
           />
-          <div className="md:mx-24">
-            <h2 className="xl:text-[56px] text-[30px] playfair-font">
+          <div className="lg:mx-24 md:mx-12">
+            <h2 className="xl:text-[56px] text-[#212121] text-[30px] playfair-font">
               Vaulted data protection and ransomware recovery for AWS
             </h2>
           </div>
@@ -23,7 +23,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Your backups must be protected
                 </h2>
@@ -52,7 +52,7 @@ function index() {
               className=""
               src="/assets/images/solution/ransomware/protected.svg"
             />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[52px] md:text-[36px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Achieving air-gapped data protection in AWS
               </h2>
@@ -76,7 +76,7 @@ function index() {
         <div className="bg-[#F8F8F9]">
           <div className="lg:py-20 md:py-12 py-5">
             <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
-              <div className="xl:pr-[194px] lg:pr-[50px]">
+              <div className="lg:px-[50px] md:px-[16px]">
                 <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                   Infrastructure resilience is just as important
                 </h2>
@@ -105,7 +105,7 @@ function index() {
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
             <img src="/assets/images/solution/ransomware/nimesa-ransomware.svg" />
-            <div className="xl:pr-[194px] lg:pr-[50px]">
+            <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Nimesa gives you complete resilience to ransomware
               </h2>

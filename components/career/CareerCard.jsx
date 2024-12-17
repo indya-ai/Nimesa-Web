@@ -9,7 +9,7 @@ const CareerCard = ({
 }) => {
   return (
     <div className="career-card p-[1px] px-[0.9px] rounded-[24px]">
-      <div className="flex bg-white flex-col gap-14 rounded-[24px] p-[32px] justify-between">
+      <div className="flex bg-white flex-col gap-14 rounded-[24px] md:p-[32px] p-[24px] justify-between">
         <div className="flex flex-col gap-3">
           <div className="bg-[#F3F4F4] w-fit rounded-full p-2">
             Job ID: {jobId}
