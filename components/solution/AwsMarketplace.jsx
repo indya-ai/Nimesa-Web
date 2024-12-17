@@ -1,9 +1,8 @@
-import React from "react";
 
 function AwsMarketplace() {
   return (
     <div className="container px-2 py-12 m-auto overflow-hidden">
-      <div className="xl:p-20 lg:p-16 p-8 grid md:grid-cols-2 rounded-3xl bg-[url('/assets/images/solution/aws-mp-bg.svg')] bg-cover bg-center bg-no-repeat">
+      <div className="xl:p-20 lg:p-16 md:p-8 p-4 grid md:grid-cols-2 rounded-3xl bg-[url('/assets/images/solution/aws-mp-bg.svg')] bg-cover bg-center bg-no-repeat">
         <div className="text-white xl:w-[80%] mx-auto">
           <h2 className="lg:text-[44px] md:text-[40px] text-[30px] playfair-font">
             Deploy <span className="text-[#009900]">Nimesa</span> in 2 mins from

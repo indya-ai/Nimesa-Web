@@ -6,13 +6,13 @@ function index() {
     <div>
       <Banner title="Healthcare" imageUrl="/assets/images/banner.svg" />
       <div className="bg-white lg:py-20 md:py-12 py-5">
-        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 md:gap-0 gap-4 px-2 m-auto">
+        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
             src="/assets/images/solution/financial/financial-service.svg"
           />
           <div className="md:mx-4">
-            <h2 className="lg:text-[56px] md:text-[36px] text-[30px] playfair-font">
+            <h2 className="xl:text-[56px] text-[30px] playfair-font">
               Disaster and data recovery for financial
             </h2>
             <p className="text-lg my-5">
@@ -23,7 +23,7 @@ function index() {
         </div>
         <div className="bg-[#F8F8F9] relative ">
           <div className="container lg:py-16 md:py-8 py-3 m-auto px-2">
-            <h2 className="md:text-[56px] md:text-4xl text-3xl text-center playfair-font py-5 md:mb-8">
+            <h2 className="xl:text-[56px] text-[30px] text-center playfair-font py-5 md:mb-8">
               The Nimesa Difference
             </h2>
             <p className="text-center xl:w-[40%] lg:w-[60%] mx-auto">
@@ -72,10 +72,10 @@ function index() {
           />
         </div>
         <div className="lg:py-20 md:py-12 py-5">
-          <div className="container grid items-center md:grid-cols-2 md:gap-0 gap-4 px-2 m-auto">
+          <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
             <img src="/assets/images/solution/financial/cloud-computing.svg" />
-            <div className="xl:w-[72%] md:w-[80%] mx-auto">
-              <h2 className="md:text-[56px] md:text-4xl text-3xl playfair-font py-5 md:mb-8 text-[#212121]">
+            <div className="">
+              <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-8 text-[#212121]">
                 What does it mean?
               </h2>
               <p className="text-lg text-gray">

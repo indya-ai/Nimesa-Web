@@ -163,6 +163,69 @@ export function Header() {
                         </li>
                       </ul>
                     )}
+                    <li className="m-2">
+                      <button
+                        className="flex rounded-xl items-center justify-between w-full hover:bg-[#3432CA] hover:text-white px-4 py-2 group"
+                        onClick={() => toggleSubSubMenu(1)}
+                      >
+                        By Use Case
+                        <img
+                          src="/assets/images/header/dropdown.svg"
+                          className="ml-2 w-[10px] h-[5px] -rotate-90 "
+                          alt="dropdown"
+                        />
+                      </button>
+                    </li>
+                    {/* Sub-Submenu */}
+                    {openSubSubMenu === 1 && (
+                      <ul
+                        ref={subSubMenuRef}
+                        className="lg:absolute md:left-full lg:ml-0 ml-4 py-2 z-50 top-14 lg:mt-10 w-max bg-white rounded-xl shadow-md"
+                      >
+                        <li
+                          className="m-2"
+                          onClick={() => {
+                            toggleSubMenu(1);
+                            toggleMenu();
+                          }}
+                        >
+                          <Link
+                            href="/solution/ransomware-protection"
+                            className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                          >
+                            Ransomware Protection
+                          </Link>
+                        </li>
+                        <li
+                          className="m-2"
+                          onClick={() => {
+                            toggleSubMenu(1);
+                            toggleMenu();
+                          }}
+                        >
+                          <Link
+                            href="/solution/region-redundancy"
+                            className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                          >
+                            Multi-Region Redundancy
+                          </Link>
+                        </li>
+                        <li
+                          className="m-2"
+                          onClick={() => {
+                            toggleSubMenu(1);
+                            toggleMenu();
+                          }}
+                        >
+                          <Link
+                            href="/solution/hybrid-cloud"
+                            className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                          >
+                            Hybrid Cloud
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
                   </li>
                 </ul>
               )}
