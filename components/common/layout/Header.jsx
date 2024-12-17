@@ -245,8 +245,23 @@ export function Header() {
               {openSubMenu === 1 && (
                 <ul
                   ref={subMenuRef}
-                  className="absolute rounded-xl left-0 mt-2 w-48 bg-white"
-                ></ul>
+                  className="absolute rounded-b-xl left-0 mt-2 w-max bg-white shadow"
+                >
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(1);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/product/cloud-edition"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      NIMESA Cloud Edition
+                    </Link>
+                  </li>
+                </ul>
               )}
             </li>
             <li className="relative group">
