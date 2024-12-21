@@ -19,9 +19,10 @@ function index() {
   ];
   const videoData = [
     {
-      title: "Secure MySQL Database Using Nimesa",
+      title:
+        "Application consistent protection of MySQL databases: Nimesa approach",
       imageSrc: "/assets/images/blog/image0.svg",
-      timeAgo: "February 10, 2020",
+      timeAgo: "December 27, 2019",
     },
     {
       title:
@@ -83,7 +84,7 @@ function index() {
             <div className="md:px-9 px-4 py-5 space-y-3">
               <p className="text-gray">{videoData[0].timeAgo}</p>
 
-              <h4 className="lg:text-[44px] text-[24px] text-[#212121] font-bold playfair-font">
+              <h4 className="md:text-[44px] text-[24px] text-[#212121] font-bold playfair-font">
                 {videoData[0].title}
               </h4>
             </div>

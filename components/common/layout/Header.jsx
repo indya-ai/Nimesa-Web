@@ -245,7 +245,7 @@ export function Header() {
               {openSubMenu === 1 && (
                 <ul
                   ref={subMenuRef}
-                  className="absolute rounded-b-xl left-0 mt-2 w-max bg-white shadow"
+                  className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
                 >
                   <li
                     className="m-2"
@@ -279,7 +279,7 @@ export function Header() {
               {openSubMenu === 2 && (
                 <ul
                   ref={subMenuRef}
-                  className="absolute rounded-xl left-0 mt-2 w-max bg-white"
+                  className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
                 >
                   <li
                     className="m-2"
@@ -355,8 +355,65 @@ export function Header() {
               {openSubMenu === 3 && (
                 <ul
                   ref={subMenuRef}
-                  className="absolute rounded-xl left-0 mt-2 w-48 bg-white"
-                ></ul>
+                  className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
+                >
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(3);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/company/about-us"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(3);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/company/our-team"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      Meet Our Team
+                    </Link>
+                  </li>
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(3);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/company/gallery"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      Gallery
+                    </Link>
+                  </li>
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(3);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/company/contact-us"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                </ul>
               )}
             </li>
             <li className="relative group">
@@ -376,7 +433,7 @@ export function Header() {
               {openSubMenu === 4 && (
                 <ul
                   ref={subMenuRef}
-                  className="absolute rounded-xl left-0 mt-2 w-48 bg-white"
+                  className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
                 ></ul>
               )}
             </li>
