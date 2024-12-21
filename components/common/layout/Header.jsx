@@ -279,8 +279,51 @@ export function Header() {
               {openSubMenu === 2 && (
                 <ul
                   ref={subMenuRef}
-                  className="absolute rounded-xl left-0 mt-2 w-48 bg-white"
-                ></ul>
+                  className="absolute rounded-xl left-0 mt-2 w-max bg-white"
+                >
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(2);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/resources/why-nimesha"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      NIMESA Cloud Edition
+                    </Link>
+                  </li>
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(2);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/resources/date-sheet"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      Datasheet and Whitepaper
+                    </Link>
+                  </li>
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(2);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
+                      href="/resources/videos"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                     Videos
+                    </Link>
+                  </li>
+                </ul>
               )}
             </li>
             <li className="relative group">
