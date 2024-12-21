@@ -88,7 +88,9 @@ function index() {
           </form>
         </div>
       </div>
-   <FreeTrial/>
+      <div className="lg:pt-20 py-5 m-2">
+        <FreeTrial />
+      </div>
     </div>
   );
 }

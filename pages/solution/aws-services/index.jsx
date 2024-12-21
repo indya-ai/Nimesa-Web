@@ -118,14 +118,14 @@ function index() {
             Discover the power, flexibility, and security of our cloud platform,
             designed to support your business’s growth and innovation.
           </p>
-         
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 mt-8 gap-8">
-              {OurValueCardData.map((data, index) => (
-                <OurValueCard key={index} {...data} />
-              ))}
+
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 mt-8 gap-8">
+            {OurValueCardData.map((data, index) => (
+              <OurValueCard style="aws-card" key={index} {...data} />
+            ))}
           </div>
         </div>
-      <AwsMarketplace/>
+        <AwsMarketplace />
       </div>
     </div>
   );

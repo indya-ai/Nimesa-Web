@@ -14,22 +14,24 @@ const Collapsible = ({ title, content }) => {
         className="w-full flex justify-between text-[#212121] text-base text-start py-4 px-2 border-b-[1px] border-[#D3D3D3] font-semibold focus:outline-none"
       >
         <span>{title}</span>
-        <svg
-          className={`w-6 h-6 transform transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
+        <div className="min-w-4 h-4 overflow-hidden">
+          <svg
+            className={`w-full h-full transform transition-transform duration-300 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
       </button>
 
       {/* Collapsible Content */}
