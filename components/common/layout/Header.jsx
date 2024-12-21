@@ -317,10 +317,24 @@ export function Header() {
                     }}
                   >
                     <Link
+                      href="/resources/blog"
+                      className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li
+                    className="m-2"
+                    onClick={() => {
+                      toggleSubMenu(2);
+                      toggleMenu();
+                    }}
+                  >
+                    <Link
                       href="/resources/videos"
                       className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
                     >
-                     Videos
+                      Videos
                     </Link>
                   </li>
                 </ul>

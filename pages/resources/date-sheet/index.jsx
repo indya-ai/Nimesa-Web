@@ -2,10 +2,8 @@ import Banner from "@/components/common/Banner";
 import FreeTrial from "@/components/demo/FreeTrial";
 
 function index() {
- 
- 
   return (
-    <div className="px-2">
+    <div>
       <Banner
         title="Datasheet and Whitepaper"
         imageUrl="/assets/images/banner.svg"
