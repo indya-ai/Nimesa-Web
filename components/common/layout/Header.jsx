@@ -80,7 +80,7 @@ export function Header() {
           <ul className="flex flex-col items-center space-y-4 p-4 lg:flex-row lg:space-y-0 lg:space-x-6 lg:p-0">
             {/* Menu Item 1 */}
             <li className="relative group" onClick={toggleMenu}>
-              <Link href="/use-case">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="relative group">
               <button
