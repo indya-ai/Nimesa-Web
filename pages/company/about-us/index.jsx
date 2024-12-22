@@ -1,3 +1,5 @@
+import AwardsTimeline from "@/components/awards/Award";
+import Award from "@/components/awards/Award";
 import Card from "@/components/blog/Card";
 import Banner from "@/components/common/Banner";
 import FreeTrial from "@/components/demo/FreeTrial";
@@ -139,6 +141,7 @@ function index() {
           ))}
         </div>
       </div>
+      <AwardsTimeline/>
       <div className="container xl:py-16 md:py-12 py-5 m-auto px-2">
         <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
           Gallery

@@ -24,9 +24,31 @@ body {
   background: linear-gradient(180deg, #009900 0%, rgba(52, 50, 202, 0) 100%);
 }
 .card {
-  
-  background: linear-gradient(359.99deg, rgba(0, 0, 0, 0) 5.74%, #3432CA 86.62%);
+  background: linear-gradient(
+    359.99deg,
+    rgba(0, 0, 0, 0) 5.74%,
+    #3432ca 86.62%
+  );
 }
 .text-gray {
   color: #4d4d4d;
+}
+.vertical-timeline-element-icon.shadow-size-small {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+  width: 40px !important;
+  height: 40px !important;
+  overflow: hidden !important;
+  margin-left: -21px !important;
+}
+.vertical-timeline {
+  padding: 0 !important;
+}
+.vertical-timeline-element-content{
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  -webkit-box-shadow:none !important;
+  box-shadow:none !important;
 }
