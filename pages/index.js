@@ -26,7 +26,7 @@ export default function Home() {
               "math",
               "india-money",
               "loan",
-              "freecharge",
+              "Freecharge",
             ].map((imageName, index) => (
               <img
                 key={index}

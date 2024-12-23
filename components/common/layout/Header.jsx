@@ -42,16 +42,15 @@ export function Header() {
   }, []);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-  const toggleSubMenu = (index) => {
-    setOpenSubMenu(openSubMenu === index ? null : index);
-  };
-  const toggleSubSubMenu = (index) => {
-    setOpenSubSubMenu(openSubSubMenu === index ? null : index);
-  };
-
+const toggleSubMenu = (menuKey) => {
+  setOpenSubMenu((prev) => (prev === menuKey ? null : menuKey));
+};
+ const toggleSubSubMenu = (submenuKey) => {
+   setOpenSubSubMenu((prev) => (prev === submenuKey ? null : submenuKey));
+ };
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
-      <div className="container xl:text-base lg:text-xs mx-auto flex py-5 items-center justify-between px-2">
+      <div className="container xl:text-base lg:text-xs mx-auto flex py-5 md:items-center justify-between px-2">
         {/* Logo Section */}
         <Link href="/" className="text-xl font-bold text-gray-900">
           <img src="/assets/images/header/logo.svg" layout="full" />
@@ -77,7 +76,7 @@ export function Header() {
             isMenuOpen ? "block" : "hidden"
           } absolute top-16 left-0 w-full bg-white lg:static lg:block lg:w-auto`}
         >
-          <ul className="flex flex-col items-center space-y-4 p-4 lg:flex-row lg:space-y-0 lg:space-x-6 lg:p-0">
+          <ul className="flex flex-col md:items-center space-y-4 p-4 lg:flex-row lg:space-y-0 lg:space-x-6 lg:p-0">
             {/* Menu Item 1 */}
             <li className="relative group" onClick={toggleMenu}>
               <Link href="/">Home</Link>
@@ -90,7 +89,10 @@ export function Header() {
                 Solution
                 <img
                   src="/assets/images/header/dropdown.svg"
-                  className="ml-2 w-[10px] h-[5px]"
+                  className={`ml-2 w-[10px] h-[5px] transform transition-transform duration-200 ${
+                    openSubMenu === 0 ? "rotate-180" : ""
+                  }`}
+                  alt="dropdown"
                 />
               </button>
               {/* Submenu */}
@@ -116,7 +118,7 @@ export function Header() {
                     </li>
                     <li className="m-2">
                       <button
-                        className="flex rounded-xl items-center justify-between w-full hover:bg-[#3432CA] hover:text-white px-4 py-2 group"
+                        className="flex rounded-xl items-center z-40 justify-between w-full hover:bg-[#3432CA] hover:text-white px-4 py-2 group"
                         onClick={() => toggleSubSubMenu(0)}
                       >
                         By Industry
@@ -131,7 +133,7 @@ export function Header() {
                     {openSubSubMenu === 0 && (
                       <ul
                         ref={subSubMenuRef}
-                        className="lg:absolute md:left-full lg:ml-0 ml-4 py-2 z-50 top-0 lg:mt-10 w-max bg-white rounded-xl shadow-md"
+                        className="lg:absolute md:left-full lg:ml-0 ml-5 overflow-hidden py-2 z-50 top-0 lg:mt-10 w-max bg-white rounded-xl shadow-xl"
                       >
                         <li
                           className="m-2"
@@ -180,7 +182,7 @@ export function Header() {
                     {openSubSubMenu === 1 && (
                       <ul
                         ref={subSubMenuRef}
-                        className="lg:absolute md:left-full lg:ml-0 ml-4 py-2 z-50 top-14 lg:mt-10 w-max bg-white rounded-xl shadow-md"
+                        className="lg:absolute md:left-full lg:ml-0 ml-5 py-2 z-50 top-14 lg:mt-10 w-max bg-white rounded-xl shadow-md"
                       >
                         <li
                           className="m-2"
@@ -238,7 +240,10 @@ export function Header() {
                 Product
                 <img
                   src="/assets/images/header/dropdown.svg"
-                  className="ml-2 w-[10px] h-[5px]"
+                  className={`ml-2 w-[10px] h-[5px] transform transition-transform duration-200 ${
+                    openSubMenu === 1 ? "rotate-180" : "rotate-0"
+                  }`}
+                  alt="dropdown"
                 />
               </button>
               {/* Submenu */}
@@ -272,7 +277,10 @@ export function Header() {
                 Resources
                 <img
                   src="/assets/images/header/dropdown.svg"
-                  className="ml-2 w-[10px] h-[5px]"
+                  className={`ml-2 w-[10px] h-[5px] transform transition-transform duration-200 ${
+                    openSubMenu === 2 ? "rotate-180" : "rotate-0"
+                  }`}
+                  alt="dropdown"
                 />
               </button>
               {/* Submenu */}
@@ -438,7 +446,6 @@ export function Header() {
               )}
             </li>
 
-           
             <li>
               <Link href="/demo" onClick={toggleMenu}>
                 <button className="bg-blue rounded-full px-4 py-2 text-white">
