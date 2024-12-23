@@ -6,6 +6,12 @@ function index() {
     "/assets/images/company/image1.svg",
     "/assets/images/company/image2.svg",
     "/assets/images/company/image3.svg",
+    "/assets/images/company/img 4.svg",
+    "/assets/images/company/img 5.svg",
+    "/assets/images/company/img 06.svg",
+    "/assets/images/company/img 07.svg",
+    "/assets/images/company/img 8.svg",
+    "/assets/images/company/img 09.svg",
   ];
   return (
     <div>

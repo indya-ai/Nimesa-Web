@@ -61,7 +61,7 @@ function index() {
       ],
     },
     {
-      title: "Supported AWS servic...",
+      title: "Supported AWS Services",
       imageSrc: "/assets/images/solution/aws-support.svg",
       detail: [
         "Accelerate Application Development / Testing. Create a test/dev environment by cloning a production environment in a matter of a Read More...",

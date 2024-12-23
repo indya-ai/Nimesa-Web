@@ -75,7 +75,7 @@ function index() {
           <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
             <img src="/assets/images/solution/financial/cloud-computing.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
-              <h2 className="xl:text-[56px] font-bold text-[30px] playfair-font py-5 md:mb-8 text-[#212121]">
+              <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-8 text-[#212121]">
                 What does it mean?
               </h2>
               <p className="text-lg text-gray">

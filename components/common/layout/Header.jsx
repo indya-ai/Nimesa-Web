@@ -292,7 +292,7 @@ export function Header() {
                       href="/resources/why-nimesha"
                       className="block px-4 py-2 rounded-xl hover:bg-[#3432CA] hover:text-white"
                     >
-                      NIMESA Cloud Edition
+                      Why Nimesa
                     </Link>
                   </li>
                   <li
@@ -438,11 +438,7 @@ export function Header() {
               )}
             </li>
 
-            <li>
-              <button className="border border-[#212121] text-[#212121] rounded-full px-4 py-2 ">
-                Get Trial
-              </button>
-            </li>
+           
             <li>
               <Link href="/demo" onClick={toggleMenu}>
                 <button className="bg-blue rounded-full px-4 py-2 text-white">
