@@ -58,7 +58,7 @@ const SlickCarousel = () => {
 
   return (
     <div
-      className="w-full xl:min-h-[780px] md:h-[450px] h-screen relative bg-center bg-cover"
+      className="w-full xl:min-h-[780px] md:h-[450px] relative bg-center bg-cover"
       style={{
         backgroundImage: `url('/assets/images/home/Banner.svg')`,
       }}
@@ -67,11 +67,11 @@ const SlickCarousel = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="flex m-auto items-center justify-center text-white text-xl px-8 w-full xl:min-h-[740px] md:h-[450px] h-screen"
+            className="flex m-auto items-center justify-center py-8 text-white text-xl md:px-8 w-full xl:min-h-[740px] md:h-[450px]"
           >
-            <div className="grid md:grid-cols-2 gap-8 items-center 2xl:py-8 container mx-auto xl:min-h-[740px] md:h-[450px] h-screen">
+            <div className="grid md:grid-cols-2 gap-8 items-center 2xl:py-8 container mx-auto xl:min-h-[740px] md:h-[450px]">
               <div className="xl:px-[50px] lg:px-[25px] md:px-[16px]">
-                <h2 className="2xl:text-[56px] xl:text-[50px] md:text-left leading-normal text-center md:text-[30px] text-[32px] playfair-font">
+                <h2 className="2xl:text-[56px] xl:text-[50px] md:text-left leading-normal text-center text-[30px] playfair-font">
                   {item.title}
                 </h2>
 
