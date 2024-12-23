@@ -1,4 +1,5 @@
 import Boosting from "@/components/home/Boosting";
+import BusinessCard from "@/components/home/BusinessCard";
 import CompleteEnviroment from "@/components/home/CompleteEnviroment";
 import NimesaAws from "@/components/home/NimesaAws";
 import WhyNimesa from "@/components/home/WhyNimesa";
@@ -8,11 +9,11 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="max-w-[1920px] px-8 m-auto">
+        <div className="max-w-[1920px] md:px-8 px-4 m-auto">
           <h4 className="text-center text-[22px] font-bold text-[#212121]">
             Trusted by world-class DevOps teams
           </h4>
-          <div className="flex flex-row flex-wrap py-6 justify-between items-center gap-4">
+          <div className="flex flex-row md:flex-wrap overflow-x-auto py-6 justify-between items-center gap-4">
             {[
               "bharatpe",
               "biltrax",
@@ -97,13 +98,13 @@ export default function Home() {
         <div className="md:py-16 py-8">
           <img src="/assets/images/home/image-3.svg" className="mx-auto" />
         </div>
-        <div className="bg-[#F8F8F9] py-16">
+        <div className="bg-[#F8F8F9] md:py-16 py-4">
           <div className="container m-auto">
             <Boosting />
           </div>
         </div>
         <CompleteEnviroment />
-        <div className="bg-[#F8F8F9] py-16">
+        <div className="bg-[#F8F8F9] md:py-16 py-4">
           <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Learn more about Nimesa
           </h2>
@@ -152,6 +153,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <BusinessCard/>
       </div>
     </>
   );
