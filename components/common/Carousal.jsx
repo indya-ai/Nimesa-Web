@@ -60,7 +60,7 @@ const SlickCarousel = () => {
     <div
       className="w-full xl:min-h-[780px] md:h-[450px] h-screen relative bg-center bg-cover"
       style={{
-        backgroundImage: `url('/assets/images/home/banner.svg')`,
+        backgroundImage: `url('/assets/images/home/Banner.svg')`,
       }}
     >
       <Slider {...settings}>
