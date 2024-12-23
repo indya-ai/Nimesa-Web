@@ -4,16 +4,16 @@ import AwsMarketplace from "@/components/solution/AwsMarketplace";
 function index() {
   return (
     <div>
-      <Banner title="Healthcare" imageUrl="/assets/images/banner.svg" />
-      <div className="bg-white lg:py-20 md:py-12 py-5">
+      <Banner title="Financial" imageUrl="/assets/images/banner.svg" />
+      <div className="bg-white md:py-[100px] py-[50px]">
         <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
             src="/assets/images/solution/financial/financial-service.svg"
           />
-          <div className="md:mx-4 ">
+          <div className="md:mx-4">
             <h2 className="xl:text-[56px] text-[30px] playfair-font">
-              Disaster and data recovery for financial
+              Disaster And Data Recovery For Financial
             </h2>
             <p className="text-lg my-5">
               Nimesa is the only disaster recovery solution that is engineered
@@ -91,7 +91,7 @@ function index() {
         </div>
         <div className="bg-[#F8F8F9]">
           <div className="container lg:py-16 md:py-8 py-3 m-auto px-2 text-center lg:w-[75%] md:w-[85%]">
-            <h3 className="md:text-[32px] text-2xl text-center playfair-font py-5 md:mb-8">
+            <h3 className="md:text-[32px] text-2xl text-center playfair-font py-5 md:mb-12">
               Today’s financial institutions must deliver a reliable, secure,
               first class customer experience across their digital properties.
             </h3>

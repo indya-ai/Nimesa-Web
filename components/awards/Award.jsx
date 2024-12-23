@@ -12,65 +12,101 @@ const AwardsTimeline = () => {
         Click here to check our awards.
       </p>
       <VerticalTimeline>
-        
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work rounded-[24px]"
-            contentStyle={{ background: "#F3F4F4", color: "" }}
-            contentArrowStyle={{ borderRight: "7px solid #F3F4F6" }}
-            iconStyle={{ background: "#F3F4F6", color: "#3432CA" }}
-            icon={<i className="fas fa-trophy"></i>} // Replace with your own icon
-          >
-            <div className="bg-[#F3F4F4] flex flex-col gap-3 rounded-[24px]">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work rounded-[24px]"
+          contentStyle={{ background: "#F3F4F4", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid #F3F4F6" }}
+          iconStyle={{ background: "#F3F4F6", color: "#3432CA" }}
+          icon={<i className="fas fa-trophy"></i>} // Replace with your own icon
+        >
+          <div className="bg-[#F3F4F4] flex flex-col gap-3 rounded-[24px]">
             <h3 className="vertical-timeline-element-title font-semibold">
               NYCx Cyber Moonshot Challenge
             </h3>
             <img src="/assets/images/solution/multi-region/image.svg" />
-        </div>
+          </div>
+        </VerticalTimelineElement>
 
-          </VerticalTimelineElement>
-          
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#F3F4F6", color: "#6a1b9a" }}
+          contentStyle={{ background: "#F8F8F9", color: "" }}
           contentArrowStyle={{ borderRight: "7px solid #f3e5f5" }}
           iconStyle={{ background: "#F3F4F6", color: "#fff" }}
           icon={<i className="fas fa-award"></i>} // Replace with your own icon
         >
-          <h3 className="vertical-timeline-element-title font-semibold">
+          <p className="border card rounded-full w-fit m-3">
+            <div className="bg-white m-[1px] rounded-full px-2 py-[4px]">
+              16 Aug
+            </div>
+          </p>
+          <h3 className="vertical-timeline-element-title font-bold text-gray text-2xl pt-8">
             Nimesa - AWS Semi-programmable Scripts Demo
           </h3>
-          <p>16 Aug</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "", color: "#2e7d32" }}
-          contentArrowStyle={{ borderRight: "7px solid #d0f8ce" }}
-          iconStyle={{ background: "", color: "#fff" }}
-          icon={<i className="fas fa-star"></i>} // Replace with your own icon
+          contentStyle={{ background: "#F8F8F9", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid #f3e5f5" }}
+          iconStyle={{ background: "#F3F4F6", color: "#fff" }}
+          icon={<i className="fas fa-award"></i>} // Replace with your own icon
         >
-          <h3 className="vertical-timeline-element-title font-semibold">
-            Featured in Tech-30 Startup
-          </h3>
-          <p>Techsparks 2019 by Yourstory</p>
-          <p>17 Oct</p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "", color: "#ef6c00" }}
-          contentArrowStyle={{ borderRight: "7px solid red" }}
-          iconStyle={{ background: "", color: "#fff" }}
-          icon={<i className="fas fa-medal"></i>} // Replace with your own icon
-        >
-          <h3 className="vertical-timeline-element-title font-semibold">
-            Amazon Sambhav Challenge
-          </h3>
-          <p>
-            3rd runner-up at the National level Amazon Sambhav Entrepreneurship
-            Challenge.
+          <p className="border card rounded-full w-fit m-3">
+            <div className="bg-white m-[1px] rounded-full px-2 py-[4px]">
+              16 Aug
+            </div>
           </p>
-          <p>21 Apr</p>
+          <h3 className="vertical-timeline-element-title font-bold text-gray text-2xl pt-8">
+            Nimesa got featured in Tech-30 Startup list in the Techsparks
+            2019 event conducted by Yourstory.
+          </h3>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work rounded-[24px]"
+          contentStyle={{ background: "#F3F4F4", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid #F3F4F6" }}
+          iconStyle={{ background: "#F3F4F6", color: "#3432CA" }}
+          icon={<i className="fas fa-trophy"></i>} // Replace with your own icon
+        >
+          <div className="bg-[#F3F4F4] flex flex-col gap-3 rounded-[24px]">
+            <h3 className="vertical-timeline-element-title font-semibold">
+              TECHSPARKS 2019 Tech 30 Startup
+            </h3>
+            <img src="/assets/images/solution/multi-region/image1.svg" />
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work rounded-[24px]"
+          contentStyle={{ background: "#F3F4F4", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid #F3F4F6" }}
+          iconStyle={{ background: "#F3F4F6", color: "#3432CA" }}
+          icon={<i className="fas fa-trophy"></i>} // Replace with your own icon
+        >
+          <div className="bg-[#F3F4F4] flex flex-col gap-3 rounded-[24px]">
+            <h3 className="vertical-timeline-element-title font-semibold">
+              Amazon Samhbhav
+            </h3>
+            <img src="/assets/images/solution/multi-region/image2.svg" />
+          </div>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#F8F8F9", color: "" }}
+          contentArrowStyle={{ borderRight: "7px solid #f3e5f5" }}
+          iconStyle={{ background: "#F3F4F6", color: "#fff" }}
+          icon={<i className="fas fa-award"></i>} // Replace with your own icon
+        >
+          <p className="border card rounded-full w-fit m-3">
+            <div className="bg-white m-[1px] rounded-full px-2 py-[4px]">
+              2 Apr
+            </div>
+          </p>
+          <h3 className="vertical-timeline-element-title font-bold text-gray text-2xl pt-8">
+            NNIMESA, a Bangalore-based start-up, has won the 3rd runner-up prize
+            in the prestigious National level Amazon Smbhav Entrepreneurship
+            Challenge 2021.
+          </h3>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

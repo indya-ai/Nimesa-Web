@@ -74,14 +74,14 @@ function index() {
   return (
     <div>
       <Banner title="About Us" imageUrl="/assets/images/banner.svg" />
-      <div className="container grid items-center lg:grid-cols-2 xl:py-16 md:py-12 py-5 gap-[8px] px-2 m-auto">
+      <div className="container grid items-center lg:grid-cols-2 md:py-[100px] py-[50px] gap-[8px] px-2 m-auto">
         <img
           className="lg:w-auto w-full"
           src="/assets/images/solution/multi-region/work-load.svg"
         />
         <div className="xl:px-[50px] lg:px-[25px] md:px-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
-            We create simple & reliable Backup & DR
+            We Create Simple & Reliable Backup & DR
           </h2>
           <h4 className="lg:text-[32px] md:text-left text-center text-[24px] text-[#212121] playfair-font font-bold py-5">
             Solution for the cloud

@@ -25,7 +25,7 @@ function index() {
   return (
     <div>
       <Banner title="Contact Us" imageUrl="/assets/images/banner.svg" />
-      <div className="container m-auto grid xl:grid-cols-3 md:grid-cols-2 py-12 gap-8 px-1">
+      <div className="container m-auto grid xl:grid-cols-3 md:grid-cols-2 md:py-[100px] py-[50px] gap-8 px-1">
         {OurValueCardData.map((data, index) => (
           <OurValueCard style="card" key={index} {...data} />
         ))}

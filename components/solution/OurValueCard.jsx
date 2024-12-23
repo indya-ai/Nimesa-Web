@@ -10,7 +10,7 @@ const OurValueCard = ({ style, title, imageSrc, detail }) => {
             {title}
           </h3>
            {detail.map((item, index) => (
-            <p key={index} className="text-sm text-gray-600">
+            <p key={index} className=" text-gray">
               {item}
             </p>
           ))}

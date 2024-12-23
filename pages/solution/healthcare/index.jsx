@@ -5,15 +5,15 @@ function index() {
   return (
     <div>
       <Banner title="Healthcare" imageUrl="/assets/images/banner.svg" />
-      <div className="bg-white lg:py-20 md:py-12 py-5">
-        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
+      <div className="bg-white md:py-[100px] py-[50px]">
+        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-1 m-auto">
           <img
             className="mx-auto"
             src="/assets/images/solution/healthcare/healthcare.svg"
           />
           <div className="md:mx-4">
             <h2 className="xl:text-[56px] text-[30px] playfair-font">
-              Disaster and data recovery for healthcare
+              Disaster And Data Recovery For Healthcare
             </h2>
             <p className="text-lg my-5">
               Building Resilience for Regulated Organizations in AWS
@@ -91,7 +91,7 @@ function index() {
         </div>
         <div className="bg-[#F8F8F9]">
           <div className="container lg:py-16 md:py-8 py-3 m-auto px-2 text-center lg:w-[70%] md:w-[90%]">
-            <h3 className="md:text-[32px] text-2xl text-center playfair-font py-5 md:mb-4">
+            <h3 className="md:text-[32px] text-2xl text-center playfair-font py-5 md:mb-8">
               The rigorous compliance requirements of healthcare and HIT
               providers demand that your technology environments are prepared
               for any data-loss or downtime event.
@@ -115,7 +115,9 @@ function index() {
             </p>
           </div>
         </div>
-        <AwsMarketplace />
+        <div className="m-[2px]">
+          <AwsMarketplace />
+        </div>
       </div>
     </div>
   );

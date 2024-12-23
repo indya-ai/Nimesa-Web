@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function NimesaAws() {
   // State to manage which section is expanded
-  const [expandedSection, setExpandedSection] = useState(null);
+  const [expandedSection, setExpandedSection] = useState("protect");
 
   // Function to toggle the expanded section
   const toggleSection = (section) => {
@@ -16,7 +16,7 @@ function NimesaAws() {
         {/* Heading for Protection Section, only show if not expanded */}
         {expandedSection !== "protect" && (
           <h4
-            className="text-[#212121]text-start text-center md:text-[32px] text-[24px] font-bold cursor-pointer"
+            className="text-[#212121] text-start md:text-[32px] text-[24px] font-bold cursor-pointer"
             onClick={() => toggleSection("protect")}
           >
             Protect AWS Native services seamlessly

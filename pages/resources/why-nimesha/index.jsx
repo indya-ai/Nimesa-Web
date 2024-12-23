@@ -50,7 +50,7 @@ function index() {
   return (
     <div>
       <Banner title="Why NIMESHA" imageUrl="/assets/images/banner.svg" />
-      <div className="py-4 px-2">
+      <div className="md:py-[100px] py-[50px] px-2">
         <div className="container m-auto grid md:grid-cols-2 items-center">
           <div className="lg:px-[60px]">
             <h2 className="text-[56px] playfair-font text-[#212121]">
@@ -83,11 +83,11 @@ function index() {
             </div>
           </div>
         </div>
-        <div className="pt-24 pb-8 container m-auto">
+        <div className="pt-24 md:py-[100px] container m-auto">
           <h2 className="md:text-[56px] text-4xl text-center playfair-font">
             Our approach
           </h2>
-          <p className="text-center xl:w-[65%] text-gray lg:w-[80%] mx-auto mt-8">
+          <p className="text-center xl:w-[65%] text-gray lg:w-[80%] mx-auto md:mt-16 mt-8">
             Unlike traditional backup solutions where backups are used only for
             restores, NIMESA makes your backup productive by enabling to support
             multiple use cases. In a datacenter for every backup, there are
@@ -95,7 +95,7 @@ function index() {
             reduces cost by associating expiry to the copies.
           </p>
         </div>
-        <div className="container m-auto grid md:grid-cols-2 my-8 gap-4">
+        <div className="container m-auto grid md:grid-cols-2 my-8 gap-8">
           <div className="card flex p-[1.5px] flex-col items-center rounded-[24px] overflow-hidden">
             <div className="bg-white rounded-[24px] w-full p-12 justify-around flex flex-col h-full">
               <h2 className="xl:text-[44px] lg:text-[40px] text-[30px] text-[#212121] text-center">

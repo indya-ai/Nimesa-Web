@@ -1,6 +1,6 @@
-const Card = ({ title, imageSrc, detail, details }) => {
+const Card = ({ title, imageSrc, detail, details, onClick }) => {
   return (
-    <div className="card pt-[1px] px-[1px] rounded-[24px]">
+    <div className="card pt-[1px] px-[1px] rounded-[24px] cursor-pointer" onClick={onClick}>
       <div
         className={`flex bg-white h-full flex-col gap-14 rounded-[24px] ${
           detail === true ? "2xl:p-[25px] p-[18px]" : "2xl:p-[38px] p-[22px]"

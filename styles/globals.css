@@ -37,17 +37,8 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.vertical-timeline--two-columns .vertical-timeline-element-icon {
-  width: 40px !important;
-  height: 40px !important;
-  overflow: hidden !important;
-  margin-left: -21px !important;
-}
-.vertical-timeline {
-  padding: 0 !important;
-}
+
 .vertical-timeline-element-content{
-  border-radius: 24px !important;
   overflow: hidden !important;
   -webkit-box-shadow:none !important;
   box-shadow:none !important;

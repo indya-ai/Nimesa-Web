@@ -8,7 +8,7 @@ function index() {
         title="Multi-Region Redundancy"
         imageUrl="/assets/images/banner.svg"
       />
-      <div className="bg-white lg:py-20 md:py-12 py-5">
+      <div className="bg-white md:py-[100px] py-[50px]">
         <div className="container md:text-start text-center lg:mb-16 mb-6 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
@@ -16,7 +16,7 @@ function index() {
           />
           <div className="md:mx-20">
             <h2 className="xl:text-[56px] text-[30px] playfair-font text-[#212121]">
-              Comprehensive multi-region redundancy for AWS
+              Comprehensive Multi-Region Redundancy For AWS
             </h2>
           </div>
         </div>
@@ -37,13 +37,13 @@ function index() {
                   cascade across the entire environment. 
                 </p>
               </div>
-              <img src="/assets/images/solution/multi-region/complex-cloud.svg" />
+              <img className="w-full" src="/assets/images/solution/multi-region/complex-cloud.svg" />
             </div>
           </div>
         </div>
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-            <img src="/assets/images/solution/ransomware/protected.svg" />
+            <img className="w-full" src="/assets/images/solution/ransomware/protected.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[54px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 High availability and geographic redundancy
@@ -80,13 +80,13 @@ function index() {
                   for a broad range of AWS services. 
                 </p>
               </div>
-              <img src="/assets/images/solution/multi-region/geographic.svg" />
+              <img className="w-full" src="/assets/images/solution/multi-region/geographic.svg" />
             </div>
           </div>
         </div>
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-            <img src="/assets/images/solution/multi-region/cloud.svg" />
+            <img className="w-full" src="/assets/images/solution/multi-region/cloud.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Purpose built for the cloud
@@ -132,13 +132,13 @@ function index() {
                   paying for idling resources you aren’t using. 
                 </p>
               </div>
-              <img src="/assets/images/solution/multi-region/balancing.svg" />
+              <img className="w-full" src="/assets/images/solution/multi-region/balancing.svg" />
             </div>
           </div>
         </div>
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-            <img src="/assets/images/solution/multi-region/work-load.svg" />
+            <img className="w-full" src="/assets/images/solution/multi-region/work-load.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Support for all workload types
@@ -169,7 +169,7 @@ function index() {
                   alternate region.
                 </p>
               </div>
-              <img src="/assets/images/solution/multi-region/region.svg" />
+              <img className="w-full" src="/assets/images/solution/multi-region/region.svg" />
             </div>
           </div>
         </div>

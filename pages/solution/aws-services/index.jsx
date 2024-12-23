@@ -71,11 +71,11 @@ function index() {
   return (
     <div>
       <Banner title="AWS Services" imageUrl="/assets/images/banner.svg" />
-      <div className="bg-white lg:py-20 md:py-12 py-5">
-        <div className="container lg:mb-16 lg:items-center items-center grid md:grid-cols-2 md:gap-0 gap-4 px-2 m-auto">
+      <div className="bg-white md:py-[100px] py-[50px]">
+        <div className="container lg:mb-16 lg:items-center items-center grid md:grid-cols-2 md:gap-0 gap-4 px-1 m-auto">
           <img className="mx-auto" src="/assets/images/solution/solution.svg" />
           <div className="md:mx-4">
-            <h2 className="text-[56px] playfair-font">Solution</h2>
+            <h2 className="text-[56px] playfair-font md:text-start text-center">Solution</h2>
             <p className="text-lg my-5">
               NIMESA is a data protection and copy data management solution
               built for AWS EC2 instances, RDS, Load Balancers, S3 and more… It
@@ -94,9 +94,9 @@ function index() {
           </div>
         </div>
         <div className="bg-[#F8F8F9]">
-          <div className="container lg:py-16 md:py-8 py-3 m-auto px-2">
+          <div className="container lg:py-16 md:py-8 py-3 m-auto px-1">
             <h2 className="md:text-[56px] text-4xl text-center playfair-font py-5 md:mb-8">
-              Our services
+              Our Services
             </h2>
             <p className="text-center xl:w-[40%] lg:w-[60%] mx-auto">
               Your AWS environment is a complex system that you’ve deftly
@@ -110,7 +110,7 @@ function index() {
             </div>
           </div>
         </div>
-        <div className="container lg:py-12 md:py-8 py-3 m-auto px-2">
+        <div className="container lg:py-12 md:py-8 py-3 m-auto p-1">
           <h2 className="md:text-[56px] text-4xl text-center playfair-font py-5 md:mb-8">
             Our value
           </h2>
@@ -125,7 +125,9 @@ function index() {
             ))}
           </div>
         </div>
-        <AwsMarketplace />
+        <div className="m-[2px]">
+          <AwsMarketplace />
+        </div>
       </div>
     </div>
   );

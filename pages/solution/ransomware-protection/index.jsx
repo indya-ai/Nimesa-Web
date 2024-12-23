@@ -8,7 +8,7 @@ function index() {
         title="Ransomware Protection"
         imageUrl="/assets/images/banner.svg"
       />
-      <div className="bg-white lg:py-20 md:py-12 py-8">
+      <div className="bg-white md:py-[100px] py-[50px]">
         <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
@@ -16,7 +16,7 @@ function index() {
           />
           <div className="lg:mx-24 md:mx-12">
             <h2 className="xl:text-[56px] text-[#212121] text-[30px] playfair-font">
-              Vaulted data protection and ransomware recovery for AWS
+              Vaulted Data Protection And Ransomware Recovery For AWS
             </h2>
           </div>
         </div>

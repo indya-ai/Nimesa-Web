@@ -26,7 +26,7 @@ function index() {
   return (
     <div>
       <Banner title="Our Team" imageUrl="/assets/images/banner.svg" />
-      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:py-16 md:py-12 py-5 gap-6 px-[4px]">
+      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:py-[100px] py-[50px] gap-6 px-[4px]">
         {teamMembers.map((member, index) => (
           <TeamCard
             key={index}
@@ -37,7 +37,7 @@ function index() {
           />
         ))}
       </div>
-      <div className="container m-auto py-12 mx-[4px]">
+      <div className="container mx-auto py-12 px-1">
         <FreeTrial />
       </div>
     </div>

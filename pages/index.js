@@ -11,11 +11,11 @@ export default function Home() {
     <>
       <div>
         <SlickCarousel />
-        <div className="max-w-[1920px] md:px-8 px-4 m-auto ">
+        <div className="max-w-[1920px] md:px-8 px-4 m-auto">
           <h4 className="text-center text-[22px] font-bold text-[#212121] lg:py-[100px] py-[50px]">
-            Trusted by world-class DevOps teams
+            Trusted By World-class DevOps Teams
           </h4>
-          <div className="flex flex-row md:flex-wrap overflow-x-auto justify-between items-center gap-4 ">
+          <div className="flex flex-row md:flex-wrap overflow-x-auto justify-between items-center gap-4 pb-4">
             {[
               "bharatpe",
               "biltrax",
@@ -37,11 +37,11 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="container grid items-center md:grid-cols-2 md:pb-16 pb-6 gap-[8px] px-2 m-auto lg:py-[100px] py-[50px]">
+        <div className="container grid items-center md:grid-cols-2 md:pb-16 pb-6 md:gap-[8px] gap-6 px-2 m-auto lg:py-[100px] py-[50px]">
           <img className=" m-auto w-full" src="/assets/images/home/image.svg" />
           <div className="xl:px-[50x] lg:px-[25px] md:px-[16px]">
             <h2 className="xl:text-[56px] md:pr-16 md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
-              Supported AWS services
+              Supported AWS Services
             </h2>
 
             <p className="text-lg md:text-left text-center text-gray my-3">
@@ -115,8 +115,8 @@ export default function Home() {
             Discover the power, flexibility, and security of our cloud platform,
             designed to support your business’s growth and innovation.
           </p>
-          <div className="grid md:grid-cols-2 gap-4 mt-8 container m-auto">
-            <div className="m-[4px] overflow-hidden p-[1px] relative rounded-[24px] card">
+          <div className="grid md:grid-cols-2 gap-4 md:mt-16 mt-8 container m-auto">
+            <div className="m-[4px] overflow-hidden p-[1px] relative rounded-[24px] card ">
               <img
                 className="absolute top-[0px] right-0"
                 src="/assets/images/home/img1.svg"

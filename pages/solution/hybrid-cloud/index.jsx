@@ -5,7 +5,7 @@ function index() {
   return (
     <div>
       <Banner title="Hybrid Cloud" imageUrl="/assets/images/banner.svg" />
-      <div className="bg-white lg:py-20 md:py-12 py-5">
+      <div className="bg-white md:py-[100px] py-[50px]">
         <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
           <img
             className="mx-auto"
@@ -13,7 +13,7 @@ function index() {
           />
           <div className="md:mx-24">
             <h2 className="xl:text-[56px] text-[30px] playfair-font text-[#212121]">
-              Implementing disaster recovery for the hybrid cloud
+              Implementing Disaster Recovery For The Hybrid Cloud
             </h2>
           </div>
         </div>
@@ -39,13 +39,13 @@ function index() {
                   teams must explicitly implement a DR strategy themselves.
                 </p>
               </div>
-              <img src="/assets/images/solution/hybrid/planning.svg" />
+              <img className="w-full" src="/assets/images/solution/hybrid/planning.svg" />
             </div>
           </div>
         </div>
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-            <img src="/assets/images/solution/hybrid/disaster.svg" />
+            <img className="w-full" src="/assets/images/solution/hybrid/disaster.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[54px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 What kinds of IT disasters should i plan for?
@@ -90,13 +90,13 @@ function index() {
                   against the regional failure scenario outlined above.
                 </p>
               </div>
-              <img src="/assets/images/solution/hybrid/building.svg" />
+              <img className="w-full" src="/assets/images/solution/hybrid/building.svg" />
             </div>
           </div>
         </div>
         <div className="lg:py-20 md:py-12 py-5">
           <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
-            <img src="/assets/images/solution/hybrid/amazon-hosted.svg" />
+            <img className="w-full" src="/assets/images/solution/hybrid/amazon-hosted.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">
                 Nimesa solution makes DR for your amazon-hosted infrastructure
@@ -131,7 +131,7 @@ function index() {
                   types of disasters – and Nimesa can help.
                 </p>
               </div>
-              <img src="/assets/images/solution/hybrid/aws.svg" />
+              <img className="w-full" src="/assets/images/solution/hybrid/aws.svg" />
             </div>
           </div>
         </div>
