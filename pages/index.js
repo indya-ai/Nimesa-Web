@@ -3,6 +3,7 @@ import Boosting from "@/components/home/Boosting";
 import BusinessCard from "@/components/home/BusinessCard";
 import CompleteEnviroment from "@/components/home/CompleteEnviroment";
 import NimesaAws from "@/components/home/NimesaAws";
+import Testimonial from "@/components/home/Tastimonial";
 import WhyNimesa from "@/components/home/WhyNimesa";
 import AwsMarketplace from "@/components/solution/AwsMarketplace";
 
@@ -105,6 +106,9 @@ export default function Home() {
           <div className="container m-auto">
             <Boosting />
           </div>
+        </div>
+        <div className="bg-[#F8F8F9] md:py-[100px] py-[50px]">
+            <Testimonial/>
         </div>
         <CompleteEnviroment />
         <div className="bg-[#F8F8F9] md:mt-[100px] mt-[40px] md:py-[80px] py-[40px] px-1">

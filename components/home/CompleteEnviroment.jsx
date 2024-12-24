@@ -1,6 +1,9 @@
-import React from 'react'
+import { useRouter } from "next/router";
+import AwsMarketplace from "../solution/AwsMarketplace";
 
 function CompleteEnviroment() {
+  const router = useRouter(); // Get the router object
+  const { pathname } = router; // Get the current path
   return (
     <div>
       <h3 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121] pt-[100px]">
@@ -103,7 +106,14 @@ function CompleteEnviroment() {
           </p>
         </div>
       </div>
-      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-1 m-auto">
+      {pathname === "/landing" && <AwsMarketplace />}
+      <div
+        className={`container grid items-center ${
+          pathname === "/landing"
+            ? " pb-[40px] md:pb-[100px]"
+            : "py-[40px] md:py-[100px]"
+        }  md:grid-cols-2 md:gap-[8px] gap-[30px] px-1 m-auto`}
+      >
         <div className="xl:pr-[60px] lg:pr-[25px] md:pr-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Agentless solution
@@ -139,4 +149,4 @@ function CompleteEnviroment() {
   );
 }
 
-export default CompleteEnviroment
+export default CompleteEnviroment;
