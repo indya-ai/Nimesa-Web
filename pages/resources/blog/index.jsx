@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import Card from "@/components/blog/Card";
 import Banner from "@/components/common/Banner";
+import Link from "next/link";
 
 function Index() {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true); // Loader state
+  const [loading, setLoading] = useState(true);
   const [tags, setTags] = useState([
     { name: "All", id: null },
     { name: "AWS", id: 1 },
@@ -26,7 +27,7 @@ function Index() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      setLoading(true); // Show loader
+      setLoading(true);
       try {
         const response = await fetch(
           "https://nimesa.io/wp-json/wp/v2/posts?_embed&per_page=100"
@@ -36,29 +37,21 @@ function Index() {
       } catch (error) {
         console.error("Error fetching posts:", error);
       } finally {
-        setLoading(false); // Hide loader
+        setLoading(false);
       }
     };
 
     fetchPosts();
   }, []);
 
-  const timeAgo = (date) => {
-    const now = new Date();
-    const postDate = new Date(date);
-    const diffInSeconds = Math.floor((now - postDate) / 1000);
-    const diffInMinutes = Math.floor(diffInSeconds / 60);
-    const diffInHours = Math.floor(diffInMinutes / 60);
-    const diffInDays = Math.floor(diffInHours / 24);
+ const timeAgo = (date) => {
+   const postDate = new Date(date);
 
-    if (diffInDays > 0)
-      return `${diffInDays} day${diffInDays > 1 ? "s" : ""} ago`;
-    if (diffInHours > 0)
-      return `${diffInHours} hour${diffInHours > 1 ? "s" : ""} ago`;
-    if (diffInMinutes > 0)
-      return `${diffInMinutes} minute${diffInMinutes > 1 ? "s" : ""} ago`;
-    return "Just now";
-  };
+   // Format the date to 'day-month-year' format (e.g., '24-12-2024')
+   const formattedDate = postDate.toLocaleDateString("en-GB"); // en-GB is for 'dd/mm/yyyy' format
+
+   return formattedDate;
+ };
 
   const filteredPosts = posts.filter((post) => {
     const matchesSearchTerm = post.title.rendered
@@ -95,10 +88,10 @@ function Index() {
           {tags.map((tag) => (
             <button
               key={tag.id}
-              onClick={() => setSelectedTag(tag.id)} // Set selected tag
+              onClick={() => setSelectedTag(tag.id)}
               className={`py-2 px-4 min-w-fit mb-3 rounded-full md:text-base text-xs transition ${
                 selectedTag === tag.id
-                  ? "bg-black text-white" // Highlight selected tag
+                  ? "bg-black text-white"
                   : "bg-white text-gray border border-gray-300"
               }`}
             >
@@ -126,9 +119,13 @@ function Index() {
               />
               <div className="md:px-9 px-4 py-5 space-y-3">
                 <p className="text-gray">{timeAgo(filteredPosts[0].date)}</p>
-                <h4 className="md:text-[44px] text-[24px] text-[#212121] font-bold playfair-font">
-                  {filteredPosts[0].title.rendered}
-                </h4>
+                <Link
+                  href={`/resources/blog/${filteredPosts[0].id}`} // Dynamic route
+                >
+                  <h4 className="md:text-[44px] text-[24px] text-[#212121] font-bold playfair-font">
+                    {filteredPosts[0].title.rendered}
+                  </h4>
+                </Link>
               </div>
             </div>
 
@@ -143,6 +140,7 @@ function Index() {
                   }
                   excerpt={post.excerpt.rendered}
                   date={timeAgo(post.date)}
+                  postId={post.id} // Pass postId to Card
                 />
               ))}
             </div>
