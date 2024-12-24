@@ -12,8 +12,8 @@ export default function Home() {
       <div>
         <SlickCarousel />
         <div className="max-w-[1920px] md:px-8 px-4 m-auto">
-          <h4 className="text-center text-[22px] font-bold text-[#212121] lg:py-[100px] py-[50px]">
-            Trusted By World-class DevOps Teams
+          <h4 className="text-center capitalize text-[22px] font-bold text-[#212121] lg:py-[100px] py-[50px]">
+            trusted By World-class DevOps Teams
           </h4>
           <div className="flex flex-row md:flex-wrap overflow-x-auto justify-between items-center gap-4 pb-4">
             {[
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="container grid items-center md:grid-cols-2 md:pb-16 pb-6 md:gap-[8px] gap-6 px-1 m-auto lg:py-[100px] py-[50px]">
           <img className=" m-auto w-full" src="/assets/images/home/image.svg" />
           <div className="xl:px-[50x] lg:px-[25px] md:px-[16px]">
-            <h2 className="xl:text-[56px] md:pr-16 md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
+            <h2 className="capitalize xl:text-[56px] md:pr-16 md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
               Supported AWS Services
             </h2>
 
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div className="bg-[#F3F6F9] xl:py-12 px-1 relative">
           <div className="lg:py-12 md:py-8 py-3 m-auto px-2">
-            <h2 className="md:text-[56px] text-4xl text-center playfair-font py-5 md:mb-8">
+            <h2 className="md:text-[56px] capitalize text-4xl text-center playfair-font py-5 md:mb-8">
               Why Nimesa?
             </h2>
             <p className="text-center xl:w-[40%] lg:w-[60%] mx-auto">

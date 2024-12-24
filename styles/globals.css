@@ -38,8 +38,14 @@ body {
   box-shadow: none;
 }
 
-.vertical-timeline-element-content{
+.vertical-timeline-element-content {
   overflow: hidden !important;
-  -webkit-box-shadow:none !important;
-  box-shadow:none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+h1,
+h2,
+h3,
+.capitalize {
+  text-transform: capitalize;
 }
