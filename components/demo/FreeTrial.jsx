@@ -3,7 +3,7 @@ import React from "react";
 function FreeTrial() {
   return (
     <div >
-      <div className="bg-[url('/assets/images/demo/free-trail-bg.svg')] text-center bg-cover bg-center rounded-[24px] container px-2 m-auto md:p-16 text-white p-12">
+      <div className="bg-[url('/assets/images/demo/free-trail-bg.svg')] text-center bg-cover bg-center rounded-[24px] container px-1 m-auto md:p-16 text-white p-12">
         <h4 className="md:text-[44px] text-3xl text-center mb-2 playfair-font">
           Request for free trial
         </h4>

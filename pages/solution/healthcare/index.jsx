@@ -22,7 +22,7 @@ function index() {
           </div>
         </div>
         <div className="bg-[#F8F8F9] relative ">
-          <div className="container lg:py-16 md:py-8 py-3 m-auto px-2">
+          <div className="container lg:py-16 md:py-8 py-3 m-auto px-1">
             <h2 className="xl:text-[56px] text-[30px] text-center playfair-font md:py-5 py-5 md:mb-4">
               The Nimesa Difference
             </h2>
@@ -74,7 +74,7 @@ function index() {
           />
         </div>
         <div className="lg:py-20 md:py-12 py-5">
-          <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
+          <div className="container grid items-center md:grid-cols-2 gap-[4px] px-1 m-auto">
             <img src="/assets/images/solution/healthcare/cloud-computing.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-4 text-[#212121]">

@@ -10,7 +10,10 @@ function index() {
       />
       <div className="lg:py-20 md:py-12 py-5 px-1">
         <div className="container grid items-center md:grid-cols-2 md:gap-[4px] gap-4 m-auto">
-          <img className="w-full" src="/assets/images/solution/date-sheet/white-paper.svg" />
+          <img
+            className="w-full"
+            src="/assets/images/solution/date-sheet/white-paper.svg"
+          />
           <div className="lg:px-[50px] md:px-[16px]">
             <h2 className="md:text-start text-center xl:text-[56px] text-[30px] playfair-font text-[#212121]">
               AWS data sheet
@@ -41,12 +44,18 @@ function index() {
               Download Nimesha for AWS Datasheet
             </button>
           </div>
-          <img className="w-full" src="/assets/images/solution/date-sheet/date-sheet.svg" />
+          <img
+            className="w-full"
+            src="/assets/images/solution/date-sheet/date-sheet.svg"
+          />
         </div>
       </div>
       <div className="lg:py-20 md:py-12 py-5 px-1">
         <div className="container grid items-center md:grid-cols-2 gap-4 md:gap-[4px] m-auto">
-          <img className="w-full" src="/assets/images/solution/date-sheet/sql-server.svg" />
+          <img
+            className="w-full"
+            src="/assets/images/solution/date-sheet/sql-server.svg"
+          />
           <div className="lg:px-[50px] md:px-[16px]">
             <h2 className="md:text-start text-center xl:text-[56px] text-[30px] playfair-font text-[#212121]">
               SQL server data sheet
@@ -62,7 +71,9 @@ function index() {
           </div>
         </div>
       </div>
-      <FreeTrial />
+      <div className="mx-1">
+        <FreeTrial />
+      </div>
     </div>
   );
 }

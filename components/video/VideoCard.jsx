@@ -9,7 +9,7 @@ function VideoCard({ title, imageSrc, timeAgo, duration }) {
           src="/assets/images/videos/play-icon.svg"
         />
       </div>
-      <div className="px-9 py-5">
+      <div className="md:px-9 px-4 py-5">
         <h4 className="text-[24px] text-[#212121] font-bold playfair-font">
           {title}
         </h4>

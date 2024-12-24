@@ -6,7 +6,7 @@ function index() {
     <div>
       <Banner title="Financial" imageUrl="/assets/images/banner.svg" />
       <div className="bg-white md:py-[100px] py-[50px]">
-        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-2 m-auto">
+        <div className="container md:text-start text-center lg:mb-16 items-center grid md:grid-cols-2 gap-4 px-1 m-auto">
           <img
             className="mx-auto"
             src="/assets/images/solution/financial/financial-service.svg"
@@ -22,7 +22,7 @@ function index() {
           </div>
         </div>
         <div className="bg-[#F8F8F9] relative ">
-          <div className="container lg:py-16 md:py-8 py-3 m-auto px-2">
+          <div className="container lg:py-16 md:py-8 py-3 m-auto px-1">
             <h2 className="xl:text-[56px] text-[30px] text-center playfair-font py-5 md:mb-8">
               The Nimesa Difference
             </h2>
@@ -72,7 +72,7 @@ function index() {
           />
         </div>
         <div className="lg:py-20 md:py-12 py-5">
-          <div className="container grid items-center md:grid-cols-2 gap-[4px] px-2 m-auto">
+          <div className="container grid items-center md:grid-cols-2 gap-[4px] px-1 m-auto">
             <img src="/assets/images/solution/financial/cloud-computing.svg" />
             <div className="lg:px-[50px] md:px-[16px]">
               <h2 className="xl:text-[56px] text-[30px] playfair-font py-5 md:mb-8 text-[#212121]">
@@ -90,7 +90,7 @@ function index() {
           </div>
         </div>
         <div className="bg-[#F8F8F9]">
-          <div className="container lg:py-16 md:py-8 py-3 m-auto px-2 text-center lg:w-[75%] md:w-[85%]">
+          <div className="container lg:py-16 md:py-8 py-3 m-auto px-1 text-center lg:w-[75%] md:w-[85%]">
             <h3 className="md:text-[32px] text-2xl text-center playfair-font py-5 md:mb-12">
               Today’s financial institutions must deliver a reliable, secure,
               first class customer experience across their digital properties.

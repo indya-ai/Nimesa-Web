@@ -10,7 +10,7 @@ function CompleteEnviroment() {
         NIMESA vision is to enable availability of critical data to various
         stakeholders with unmatchable efficiency and SLAs.
       </p>
-      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-2 m-auto">
+      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-1 m-auto">
         <div className="xl:pr[60px] lg:pr-[25px] md:pr-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Cross region DR
@@ -25,7 +25,7 @@ function CompleteEnviroment() {
         </div>
         <img className=" m-auto w-full" src="/assets/images/home/cross.svg" />
       </div>
-      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto ">
+      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-1 m-auto ">
         <img className=" m-auto w-full" src="/assets/images/home/air.svg" />
         <div className="xl:px-[60px] lg:px-[25px] md:px-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
@@ -40,7 +40,7 @@ function CompleteEnviroment() {
           </p>
         </div>
       </div>
-      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-2 m-auto">
+      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-1 m-auto">
         <div className="xl:pr-[60px] lg:pr-[25px] md:pr-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Flexible RPO, near zero configuration to
@@ -57,7 +57,7 @@ function CompleteEnviroment() {
         </div>
         <img className=" m-auto w-full" src="/assets/images/home/zero.svg" />
       </div>
-      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
+      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-1 m-auto">
         <img className=" m-auto w-full" src="/assets/images/home/driven.svg" />
         <div className="xl:px-[60px] lg:px-[25px] md:px-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
@@ -71,7 +71,7 @@ function CompleteEnviroment() {
           </p>
         </div>
       </div>
-      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-2 m-auto">
+      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-1 m-auto">
         <div className="xl:pr-[60px] lg:pr-[25px] md:pr-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Compliance enablement
@@ -88,7 +88,7 @@ function CompleteEnviroment() {
           src="/assets/images/home/enabelmen.svg"
         />
       </div>
-      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
+      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-1 m-auto">
         <img className=" m-auto w-full" src="/assets/images/home/driven.svg" />
         <div className="xl:px-[60px] lg:px-[25px] md:px-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
@@ -103,7 +103,7 @@ function CompleteEnviroment() {
           </p>
         </div>
       </div>
-      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-2 m-auto">
+      <div className="container grid items-center py-[40px] md:py-[100px] md:grid-cols-2 md:gap-[8px] gap-[30px] px-1 m-auto">
         <div className="xl:pr-[60px] lg:pr-[25px] md:pr-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Agentless solution
@@ -120,7 +120,7 @@ function CompleteEnviroment() {
           src="/assets/images/home/solution.svg"
         />
       </div>
-      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-2 m-auto">
+      <div className="container grid items-center md:grid-cols-2 gap-[8px] px-1 m-auto">
         <img className=" m-auto w-full" src="/assets/images/home/driven.svg" />
         <div className="xl:px-[60px] lg:px-[25px] md:px-[16px]">
           <h2 className="xl:text-[56px] md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">

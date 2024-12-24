@@ -74,7 +74,7 @@ function index() {
   return (
     <div>
       <Banner title="About Us" imageUrl="/assets/images/banner.svg" />
-      <div className="container grid items-center lg:grid-cols-2 md:py-[100px] py-[50px] gap-[8px] px-2 m-auto">
+      <div className="container grid items-center lg:grid-cols-2 md:py-[100px] py-[50px] gap-[8px] px-1 m-auto">
         <img
           className="lg:w-auto w-full"
           src="/assets/images/solution/multi-region/work-load.svg"
@@ -101,7 +101,7 @@ function index() {
           </p>
         </div>
       </div>
-      <div className="bg-[#F8F8F9] px-2">
+      <div className="bg-[#F8F8F9] px-1">
         <div className="container xl:py-16 md:py-12 py-5 m-auto">
           <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Videos
@@ -122,7 +122,7 @@ function index() {
           </div>
         </div>
       </div>
-      <div className="container xl:py-16 md:py-12 py-5 m-auto px-2">
+      <div className="container xl:py-16 md:py-12 py-5 m-auto px-1">
         <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
           Meet Our Team
         </h2>
@@ -142,7 +142,7 @@ function index() {
         </div>
       </div>
       <AwardsTimeline/>
-      <div className="container xl:py-16 md:py-12 py-5 m-auto px-2">
+      <div className="container xl:py-16 md:py-12 py-5 m-auto px-1">
         <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
           Gallery
         </h2>
@@ -155,7 +155,7 @@ function index() {
           ))}
         </div>
       </div>
-      <div className="bg-[#F8F8F9] px-2">
+      <div className="bg-[#F8F8F9] px-1">
         <div className="container xl:py-16 md:py-12 py-5 m-auto">
           <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Blog
@@ -177,7 +177,7 @@ function index() {
           </div>
         </div>
       </div>
-      <div className="xl:py-16 md:py-12 py-5 mx-2">
+      <div className="xl:py-16 md:py-12 py-5 mx-1">
         <FreeTrial />
       </div>
     </div>

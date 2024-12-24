@@ -4,6 +4,7 @@ import Banner from "@/components/common/Banner";
 
 function Index() {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true); // Loader state
   const [tags, setTags] = useState([
     { name: "All", id: null },
     { name: "AWS", id: 1 },
@@ -21,18 +22,21 @@ function Index() {
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedTag, setSelectedTag] = useState(null); // Track selected tag
+  const [selectedTag, setSelectedTag] = useState(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
+      setLoading(true); // Show loader
       try {
         const response = await fetch(
-          "https://nimesa.io/wp-json/wp/v2/posts?_embed"
-        ); // Use `_embed` to include media data
+          "https://nimesa.io/wp-json/wp/v2/posts?_embed&per_page=100"
+        );
         const data = await response.json();
         setPosts(data);
       } catch (error) {
         console.error("Error fetching posts:", error);
+      } finally {
+        setLoading(false); // Hide loader
       }
     };
 
@@ -103,38 +107,49 @@ function Index() {
           ))}
         </div>
 
-        {/* First Card (New Style) */}
-        {filteredPosts.length > 0 && (
-          <div className="rounded-[24px] rounded-r-0 grid md:grid-cols-2 items-center mb-4 bg-[#F8F8F9] overflow-hidden">
-            <img
-              src={
-                filteredPosts[0]._embedded?.["wp:featuredmedia"]?.[0]
-                  ?.source_url
-              }
-              alt={filteredPosts[0].title.rendered}
-              className="w-full"
-            />
-            <div className="md:px-9 px-4 py-5 space-y-3">
-              <p className="text-gray">{timeAgo(filteredPosts[0].date)}</p>
-              <h4 className="md:text-[44px] text-[24px] text-[#212121] font-bold playfair-font">
-                {filteredPosts[0].title.rendered}
-              </h4>
-            </div>
+        {/* Loader */}
+        {loading ? (
+          <div className="flex justify-center items-center h-[300px]">
+            <div className="loader">Loading...</div>
           </div>
-        )}
+        ) : filteredPosts.length > 0 ? (
+          <>
+            {/* First Card */}
+            <div className="rounded-[24px] rounded-r-0 grid md:grid-cols-2 items-center mb-4 bg-[#F8F8F9] overflow-hidden">
+              <img
+                src={
+                  filteredPosts[0]._embedded?.["wp:featuredmedia"]?.[0]
+                    ?.source_url
+                }
+                alt={filteredPosts[0].title.rendered}
+                className="w-full object-cover"
+              />
+              <div className="md:px-9 px-4 py-5 space-y-3">
+                <p className="text-gray">{timeAgo(filteredPosts[0].date)}</p>
+                <h4 className="md:text-[44px] text-[24px] text-[#212121] font-bold playfair-font">
+                  {filteredPosts[0].title.rendered}
+                </h4>
+              </div>
+            </div>
 
-        {/* Remaining Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredPosts.map((post, index) => (
-            <Card
-              key={index}
-              title={post.title.rendered}
-              imageSrc={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url}
-              excerpt={post.excerpt.rendered}
-              date={timeAgo(post.date)}
-            />
-          ))}
-        </div>
+            {/* Remaining Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredPosts.slice(1).map((post, index) => (
+                <Card
+                  key={index}
+                  title={post.title.rendered}
+                  imageSrc={
+                    post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+                  }
+                  excerpt={post.excerpt.rendered}
+                  date={timeAgo(post.date)}
+                />
+              ))}
+            </div>
+          </>
+        ) : (
+          <div className="text-center text-black">No posts found.</div>
+        )}
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="container grid items-center md:grid-cols-2 md:pb-16 pb-6 md:gap-[8px] gap-6 px-2 m-auto lg:py-[100px] py-[50px]">
+        <div className="container grid items-center md:grid-cols-2 md:pb-16 pb-6 md:gap-[8px] gap-6 px-1 m-auto lg:py-[100px] py-[50px]">
           <img className=" m-auto w-full" src="/assets/images/home/image.svg" />
           <div className="xl:px-[50x] lg:px-[25px] md:px-[16px]">
             <h2 className="xl:text-[56px] md:pr-16 md:text-left text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F3F6F9] xl:py-12 relative">
+        <div className="bg-[#F3F6F9] xl:py-12 px-1 relative">
           <div className="lg:py-12 md:py-8 py-3 m-auto px-2">
             <h2 className="md:text-[56px] text-4xl text-center playfair-font py-5 md:mb-8">
               Why Nimesa?
@@ -77,10 +77,10 @@ export default function Home() {
           />
           <WhyNimesa />
         </div>
-        <div className="lg:py-[100px] py-[50px]">
+        <div className="lg:py-[100px] px-1 py-[50px]">
           <AwsMarketplace />
         </div>
-        <div className="bg-[#F3F6F9] md:py-12 py-4 relative ">
+        <div className="bg-[#F3F6F9] md:py-12 px-1 py-4 relative ">
           <img
             className="absolute top-[25px] right-0"
             src="/assets/images/home/image-2.svg"
@@ -98,16 +98,16 @@ export default function Home() {
             <NimesaAws />
           </div>
         </div>
-        <div className="lg:py-[100px] py-[50px]">
+        <div className="lg:py-[100px] py-[50px] px-1">
           <img src="/assets/images/home/image-3.png" className="mx-auto" />
         </div>
-        <div className="bg-[#F8F8F9] md:py-16 py-4">
+        <div className="bg-[#F8F8F9] md:py-16 px-1 py-4">
           <div className="container m-auto">
             <Boosting />
           </div>
         </div>
         <CompleteEnviroment />
-        <div className="bg-[#F8F8F9] md:mt-[100px] mt-[40px] md:py-[80px] py-[40px]">
+        <div className="bg-[#F8F8F9] md:mt-[100px] mt-[40px] md:py-[80px] py-[40px] px-1">
           <h2 className="xl:text-[56px] text-center md:text-[40px] text-[32px] playfair-font text-[#212121]">
             Learn more about Nimesa
           </h2>
@@ -115,8 +115,8 @@ export default function Home() {
             Discover the power, flexibility, and security of our cloud platform,
             designed to support your business’s growth and innovation.
           </p>
-          <div className="grid md:grid-cols-2 gap-4 md:mt-16 mt-8 container m-auto">
-            <div className="m-[4px] overflow-hidden p-[1px] relative rounded-[24px] card ">
+          <div className="grid md:grid-cols-2 px-1 gap-4 md:mt-16 mt-8 container m-auto">
+            <div className=" overflow-hidden p-[1px] relative rounded-[24px] card ">
               <img
                 className="absolute top-[0px] right-0"
                 src="/assets/images/home/img1.svg"
@@ -135,7 +135,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="m-[4px] overflow-hidden p-[1px] relative rounded-[24px] card">
+            <div className=" overflow-hidden p-[1px] relative rounded-[24px] card">
               <img
                 className="absolute top-[0px] right-0"
                 src="/assets/images/home/img1.svg"

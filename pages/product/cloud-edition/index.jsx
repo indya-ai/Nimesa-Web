@@ -112,7 +112,7 @@ const index = () => {
         imageUrl="/assets/images/banner.svg"
       />
       <div className="bg-white md:py-[100px] py-[50px]">
-        <div className="container grid items-center lg:grid-cols-2 pb-16 gap-[8px] px-2 m-auto">
+        <div className="container grid items-center lg:grid-cols-2 pb-16 gap-[8px] px-1 m-auto">
           <img
             className="lg:w-auto w-full"
             src="/assets/images/solution/multi-region/work-load.svg"
@@ -270,7 +270,7 @@ const index = () => {
 
         <AwsMarketplace />
         <div className="bg-[#F8F8F9]">
-          <div className="container lg:py-12 md:py-8 py-3 m-auto px-2">
+          <div className="container lg:py-12 md:py-8 py-3 m-auto px-1">
             <h2 className="lg:text-[56px] md:text-[40px] text-[24px] text-center playfair-font py-5 md:mb-8">
               NIMESA use cases
             </h2>
@@ -287,7 +287,7 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className="lg:pt-20 py-5 m-2">
+        <div className="lg:pt-20 py-5 m-1">
           <FreeTrial />
         </div>
       </div>

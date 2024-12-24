@@ -3,11 +3,13 @@ const Card = ({ title, imageSrc, excerpt, date }) => {
     <div className="bg-[#F8F8F9] p-[3px] rounded-[24px] overflow-hidden flex flex-col">
       <div className="rounded-[24px] flex flex-col h-full">
         {imageSrc && (
-          <img
-            src={imageSrc}
-            alt={title}
-            className="w-full rounded-t-[24px] h-[300px] object-cover"
-          />
+          <div className="w-full h-[300px] rounded-t-[24px]">
+            <img
+              src={imageSrc}
+              alt={title}
+              className="w-full object-cover h-full "
+            />
+          </div>
         )}
         <div className="px-4 py-5 space-y-3  flex-grow">
           <p className="text-gray-500">{date}</p>

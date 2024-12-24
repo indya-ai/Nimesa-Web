@@ -50,7 +50,7 @@ function index() {
   return (
     <div>
       <Banner title="Why NIMESHA" imageUrl="/assets/images/banner.svg" />
-      <div className="md:py-[100px] py-[50px] px-2">
+      <div className="md:py-[100px] py-[50px] px-1">
         <div className="container m-auto grid md:grid-cols-2 items-center">
           <div className="lg:px-[60px]">
             <h2 className="text-[56px] playfair-font text-[#212121]">
