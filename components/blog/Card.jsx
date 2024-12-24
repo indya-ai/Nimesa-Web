@@ -7,7 +7,7 @@ const Card = ({ title, imageSrc, excerpt, date }) => {
             <img
               src={imageSrc}
               alt={title}
-              className="w-full object-cover h-full "
+              className="w-full md:object-cover object-contain h-full "
             />
           </div>
         )}
