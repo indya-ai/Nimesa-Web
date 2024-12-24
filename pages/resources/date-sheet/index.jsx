@@ -41,7 +41,7 @@ function index() {
               Recovery works in AWS cloud environment.
             </p>
             <button className="md:mx-0 mx-auto flex bg-blue py-2.5 px-5 text-white rounded-full">
-              Download Nimesha for AWS Datasheet
+              Download Nimesa for AWS Datasheet
             </button>
           </div>
           <img
@@ -66,7 +66,7 @@ function index() {
               Recover MSSQL Databases and Tables on an AWS instance.
             </p>
             <button className="md:mx-0 mx-auto flex bg-blue py-2.5 px-5 text-white rounded-full">
-              Download Nimesha for MSSQL on AWS Datasheet
+              Download Nimesa for MSSQL on AWS Datasheet
             </button>
           </div>
         </div>

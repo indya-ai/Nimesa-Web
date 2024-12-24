@@ -49,7 +49,7 @@ function index() {
   ];
   return (
     <div>
-      <Banner title="Why NIMESHA" imageUrl="/assets/images/banner.svg" />
+      <Banner title="Why NIMESA" imageUrl="/assets/images/banner.svg" />
       <div className="md:py-[100px] py-[50px] px-1">
         <div className="container m-auto grid md:grid-cols-2 items-center">
           <div className="lg:px-[60px]">

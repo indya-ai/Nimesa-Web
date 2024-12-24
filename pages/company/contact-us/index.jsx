@@ -14,7 +14,7 @@ function index() {
     {
       title: "Email",
       imageSrc: "/assets/images/company/email.svg",
-      detail: ["Sales:sales@nimesha.io", "Support:support@nimesa.io"],
+      detail: ["Sales:sales@nimesa.io", "Support:support@nimesa.io"],
     },
     {
       title: "Call us at",

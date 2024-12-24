@@ -42,12 +42,12 @@ export function Header() {
   }, []);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-const toggleSubMenu = (menuKey) => {
-  setOpenSubMenu((prev) => (prev === menuKey ? null : menuKey));
-};
- const toggleSubSubMenu = (submenuKey) => {
-   setOpenSubSubMenu((prev) => (prev === submenuKey ? null : submenuKey));
- };
+  const toggleSubMenu = (menuKey) => {
+    setOpenSubMenu((prev) => (prev === menuKey ? null : menuKey));
+  };
+  const toggleSubSubMenu = (submenuKey) => {
+    setOpenSubSubMenu((prev) => (prev === submenuKey ? null : submenuKey));
+  };
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="container xl:text-base lg:text-xs mx-auto flex py-5 md:items-center justify-between px-2">
@@ -235,7 +235,7 @@ const toggleSubMenu = (menuKey) => {
             <li className="relative group">
               <button
                 className="flex items-center justify-between w-full md:w-auto "
-                onClick={() => toggleSubMenu(1)}
+                onClick={() => toggleSubMenu(5)}
               >
                 Product
                 <img
@@ -247,7 +247,7 @@ const toggleSubMenu = (menuKey) => {
                 />
               </button>
               {/* Submenu */}
-              {openSubMenu === 1 && (
+              {openSubMenu === 5 && (
                 <ul
                   ref={subMenuRef}
                   className="absolute rounded-xl md:left-0 mt-2 shadow w-max z-40 bg-white"
@@ -255,7 +255,7 @@ const toggleSubMenu = (menuKey) => {
                   <li
                     className="m-2"
                     onClick={() => {
-                      toggleSubMenu(1);
+                      toggleSubMenu(4);
                       toggleMenu();
                     }}
                   >
