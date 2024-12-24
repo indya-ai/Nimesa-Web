@@ -16,7 +16,7 @@ function NimesaAws() {
         {/* Heading for Protection Section, only show if not expanded */}
         {expandedSection !== "protect" && (
           <h4
-            className="text-[#212121] text-start md:text-[32px] text-[24px] font-bold cursor-pointer"
+            className="text-[#212121] text-start md:text-[32px] text-[24px] playfair-font font-bold cursor-pointer"
             onClick={() => toggleSection("protect")}
           >
             Protect AWS Native services seamlessly
@@ -39,7 +39,7 @@ function NimesaAws() {
         {/* Heading for Recovery Section, only show if not expanded */}
         {expandedSection !== "recovery" && (
           <h4
-            className="text-[#212121] md:text-start text-center md:text-[32px] text-[24px] font-bold cursor-pointer"
+            className="text-[#212121] md:text-start text-center playfair-font md:text-[32px] text-[24px] font-bold cursor-pointer"
             onClick={() => toggleSection("recovery")}
           >
             Recovery in minutes at all levels
@@ -61,7 +61,7 @@ function NimesaAws() {
         {/* Heading for DR Failover Section, only show if not expanded */}
         {expandedSection !== "drFailover" && (
           <h4
-            className="text-[#212121] md:text-start text-center md:text-[32px] text-[24px] font-bold cursor-pointer"
+            className="text-[#212121] md:text-start text-center playfair-font md:text-[32px] text-[24px] font-bold cursor-pointer"
             onClick={() => toggleSection("drFailover")}
           >
             One-click DR failover and failback
