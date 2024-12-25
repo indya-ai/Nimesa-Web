@@ -1,10 +1,13 @@
 function BusinessCard() {
   return (
     <div className="container px-1 md:py-14 py-4 m-auto overflow-hidden">
-      <div className="p-4 xl:pl-24 grid items-center md:grid-cols-2 rounded-3xl bg-[url('/assets/images/home/bg.svg')] bg-cover bg-center bg-no-repeat">
+      <div className="p-4 xl:pl-24 grid items-center md:grid-cols-2 rounded-3xl bg-[url('/assets/images/home/bg-1.svg')] bg-cover bg-center bg-no-repeat">
         <div className="text-white md:text-start text-center mx-auto">
           <h2 className="lg:text-[44px] xl:pr-[160px] text-[30px] playfair-font">
-            Empower your <span className="text-[#009900]">business </span>
+            Empower your{" "}
+            <span className="text-[#009900] bg-[#012102] pb-[2px] px-2 rounded-[12px]">
+              business{" "}
+            </span>
             with our cloud platform
           </h2>
           <p className="my-4 xl:pr-[120px]">
@@ -15,10 +18,7 @@ function BusinessCard() {
             Learn More
           </button>
         </div>
-        <img
-          className="mx-auto"
-          src="/assets/images/home/img2.svg"
-        />
+        <img className="mx-auto" src="/assets/images/home/img2.svg" />
       </div>
     </div>
   );
