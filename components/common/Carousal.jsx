@@ -28,7 +28,7 @@ const SlickCarousel = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.",
       buttonText: "Explore Features",
-      slideImage: "/assets/images/slider/slider2.svg",
+      slideImage: "/assets/images/slider/slider2.png",
     },
     {
       id: 3,
