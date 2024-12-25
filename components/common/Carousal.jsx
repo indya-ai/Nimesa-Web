@@ -67,7 +67,7 @@ const SlickCarousel = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="flex m-auto items-center justify-center py-8 text-white text-xl md:px-8 w-full xl:min-h-[740px] md:h-[450px]"
+            className="flex m-auto items-center justify-center py-8 text-white text-xl md:px-8 w-full xl:min-h-[760px] md:h-[450px]"
           >
             <div className="grid md:grid-cols-2 gap-8 items-center 2xl:py-8 container mx-auto xl:min-h-[740px] md:h-[450px]">
               <div className="xl:px-[50px] lg:px-[25px] md:px-[16px]">
