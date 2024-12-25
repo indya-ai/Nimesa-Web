@@ -6,25 +6,29 @@ import Link from "next/link";
 function Index() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [tags, setTags] = useState([
-    { name: "All", id: null },
-    { name: "AWS", id: 1 },
-    { name: "Cost Optimisation", id: 2 },
-    { name: "Data Protection", id: 3 },
-    { name: "MSSQL", id: 4 },
-    { name: "MySQL", id: 5 },
-    { name: "Nimesa 2.0", id: 6 },
-    { name: "Nimesa for Cloud", id: 7 },
-    { name: "Nimesa for Database", id: 8 },
-    { name: "Oracle", id: 9 },
-    { name: "Press Release", id: 10 },
-    { name: "Ransomware Attacks", id: 11 },
-    { name: "vSphere", id: 12 },
-  ]);
-
+  const [tags, setTags] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTag, setSelectedTag] = useState(null);
 
+  // Fetch Tags
+  useEffect(() => {
+    const fetchTags = async () => {
+      try {
+        const response = await fetch(
+          "https://nimesa.io/wp-json/wp/v2/categories"
+        );
+        const data = await response.json();
+        const allTags = [{ name: "All", id: null }, ...data];
+        setTags(allTags);
+      } catch (error) {
+        console.error("Error fetching tags:", error);
+      }
+    };
+
+    fetchTags();
+  }, []);
+
+  // Fetch Posts
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
@@ -44,20 +48,19 @@ function Index() {
     fetchPosts();
   }, []);
 
- const timeAgo = (date) => {
-   const postDate = new Date(date);
+  // Format Date
+  const timeAgo = (date) => {
+    const postDate = new Date(date);
+    return postDate.toLocaleDateString("en-GB"); // 'dd/mm/yyyy' format
+  };
 
-   // Format the date to 'day-month-year' format (e.g., '24-12-2024')
-   const formattedDate = postDate.toLocaleDateString("en-GB"); // en-GB is for 'dd/mm/yyyy' format
-
-   return formattedDate;
- };
-
+  // Filter Posts by Search and Tag
   const filteredPosts = posts.filter((post) => {
     const matchesSearchTerm = post.title.rendered
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
-    const matchesTag = selectedTag === null || post.tags.includes(selectedTag);
+    const matchesTag =
+      selectedTag === null || post.categories.includes(selectedTag);
 
     return matchesSearchTerm && matchesTag;
   });
