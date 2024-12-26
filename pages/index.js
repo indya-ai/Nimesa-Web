@@ -1,3 +1,5 @@
+//pages/index.js
+
 import SlickCarousel from "@/components/common/Carousal";
 import Boosting from "@/components/home/Boosting";
 import BusinessCard from "@/components/home/BusinessCard";
